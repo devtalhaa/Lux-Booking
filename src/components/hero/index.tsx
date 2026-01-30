@@ -21,12 +21,12 @@ const Hero = () => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             {/* Logo */}
-                            <span className="font-inter font-black italic text-5xl tracking-tight">lux</span>
+                            <span className="font-inter font-extrabold italic text-5xl tracking-tight">lux</span>
                         </div>
 
                         {/* Desktop Navigation */}
                         <div className="hidden md:flex items-center gap-4">
-                            <Button className="rounded-lg bg-[#F7F7F7] hover:bg-gray-300 text-sm shadow-none border-none ring-0 outline-none font-medium">
+                            <Button size="sm" className="rounded-lg bg-[#F7F7F7] hover:!bg-[#F7F7F7] text-sm text-dark hover:!text-dark shadow-none border-none ring-0 outline-none font-medium">
                                 <Globe className="w-5 h-5 mr-2" /> EN
                             </Button>
                             <Link href="/login">
@@ -41,7 +41,7 @@ const Hero = () => {
 
                         {/* Mobile Navigation */}
                         <div className="flex md:hidden items-center gap-4">
-                            <Button className="rounded-lg bg-[#F7F7F7] hover:bg-gray-300 text-xs shadow-none border-none ring-0 outline-none font-medium px-3 py-1.5">
+                            <Button className="rounded-lg bg-[#F7F7F7] hover:!bg-[#F7F7F7] text-xs text-dark hover:!text-dark shadow-none border-none ring-0 outline-none font-medium px-3 py-1.5">
                                 <Globe className="w-4 h-4 mr-1.5" /> En
                             </Button>
                             <button
@@ -76,7 +76,7 @@ const Hero = () => {
                 <Container className="!px-5 md:!px-8 lg:!px-[140px] 2xl:!px-[240px]">
                     {/* Hero Headline */}
                     <div className="text-center w-full mt-5 md:mt-10">
-                        <h1 className="font-heading text-4xl md:text-6xl font-bold text-dark leading-tight mb-10">
+                        <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-dark leading-tight mb-10">
                             Book Local Services Instantly.
                         </h1>
                     </div>
