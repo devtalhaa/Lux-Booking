@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
+import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
     title: 'Lux - Book Local Services Instantly',
@@ -13,8 +15,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="font-body text-dark antialiased">
+            <body className="font-inter text-black antialiased">
+              <Header />
                 {children}
+              <Footer />
             </body>
         </html>
     );

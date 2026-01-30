@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <footer className="bg-black text-white pt-12 pb-8">
-            <Container className="!px-5 md:!px-8 lg:!px-[140px] 2xl:!px-[240px]">
+            <Container className="px-5 md:px-8 lg:px-[140px] 2xl:px-[240px]">
                 {/* Top Section: Logo and Scroll to Top */}
                 <div className="flex items-center justify-between mb-[65px]">
                     {/* Logo */}

@@ -25,7 +25,7 @@ const About = () => {
                     </div>
 
                     <div className="w-full md:w-1/2">
-                        <h2 className="font-heading text-5xl md:text-6xl font-medium text-dark mb-8">
+                        <h2 className="font-heading text-5xl md:text-6xl font-medium text-black mb-8">
                             What Is Lux
                         </h2>
                         <p className="font-body text-xl text-text-muted leading-relaxed mb-8">
