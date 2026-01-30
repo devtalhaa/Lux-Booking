@@ -96,7 +96,7 @@ const Hero = () => {
                         </p>
                         <Button
                             variant="primary"
-                            className="text-lg font-semibold w-[200px] md:w-auto md:px-6"
+                            className="text-lg font-medium w-[200px] md:w-auto md:px-6"
                         >
                             Book Now
                         </Button>

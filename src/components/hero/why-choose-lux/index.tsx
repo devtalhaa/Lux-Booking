@@ -23,7 +23,7 @@ const WhyChooseLux = () => {
                     {/* Button */}
                     <Button
                         variant="primary"
-                        className="px-12 py-3 text-lg font-semibold"
+                        className="text-lg font-medium w-[200px] md:w-auto md:px-6"
                     >
                         Book Now
                     </Button>
