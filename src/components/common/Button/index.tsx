@@ -13,10 +13,10 @@ const Button: React.FC<ButtonProps> = ({
     children,
     ...props
 }) => {
-    const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg cursor-pointer shadow-sm';
+    const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg cursor-pointer';
 
     const variants = {
-        primary: 'bg-[#00C974] text-dark hover:bg-[#00B066]', // Explicitly using text-dark for contrast based on visual analysis
+        primary: 'bg-[#00C974] text-dark hover:bg-[#00331D] hover:text-white', // Explicitly using text-dark for contrast based on visual analysis
         secondary: 'bg-dark text-white hover:bg-[#333333]',
         outline: 'bg-transparent border-2 border-primary text-dark hover:bg-primary hover:text-white',
         ghost: 'bg-transparent text-dark hover:bg-gray-100',
