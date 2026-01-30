@@ -17,6 +17,7 @@ const Services = () => {
             hoverPillColor: 'group-hover:bg-[#EAECF4]',
             bgColor: 'bg-gray-card',
             hoverBg: 'hover:bg-[#F4F5F9]',
+            dims: 'w-[123px] h-[151px]',
         },
         {
             id: 2,
@@ -30,6 +31,7 @@ const Services = () => {
             hoverPillColor: 'group-hover:bg-[#E6FAF2]',
             bgColor: 'bg-gray-card',
             hoverBg: 'hover:bg-[#F2FCF8]',
+            dims: 'w-[162px] h-[151px]',
         },
         {
             id: 3,
@@ -42,17 +44,18 @@ const Services = () => {
             hoverPillColor: 'group-hover:bg-[#FEE9E4]',
             bgColor: 'bg-gray-card',
             hoverBg: 'hover:bg-[#FEF7F6]',
+            dims: 'w-[130px] h-[151px]',
         },
     ];
 
     return (
         <section className="pb-12">
             <Container className="!px-5 md:!px-8 lg:!px-[140px] 2xl:!px-[240px]">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex flex-wrap justify-center gap-4">
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className={`${service.bgColor} ${service.hoverBg || ''} group rounded-[32px] p-8 flex flex-col items-center text-center transition-colors duration-300 min-h-[400px] justify-between`}
+                            className={`${service.bgColor} ${service.hoverBg || ''} group rounded-[32px] px-8 pt-8 pb-4 flex flex-col items-center text-center transition-colors duration-300 w-[309px] h-[299px] justify-between`}
                         >
                             <div className="w-full text-center">
                                 <span className="text-sm font-bold text-dark group-hover:hidden block">
@@ -63,8 +66,8 @@ const Services = () => {
                                 </span>
                             </div>
 
-                            <div className="flex-1 flex items-center justify-center py-8">
-                                <div className="relative w-48 h-48">
+                            <div className="flex-1 flex items-center justify-center py-2">
+                                <div className={`relative ${service.dims || 'w-48 h-48'}`}>
                                     {/* Default Icon */}
                                     <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0 opacity-100">
                                         <Image
@@ -97,7 +100,7 @@ const Services = () => {
                                 </div>
                             </div>
 
-                            <div className={`px-6 py-2 rounded-full font-bold text-sm transition-colors duration-300 ${service.pillColor} ${service.hoverPillColor || ''}`}>
+                            <div className={`px-4 py-2 rounded-full font-bold text-sm transition-colors duration-300 whitespace-nowrap ${service.pillColor} ${service.hoverPillColor || ''}`}>
                                 {service.title}
                             </div>
                         </div>

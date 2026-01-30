@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Button from '../common/Button';
 import Container from '../common/Container';
 import Services from './services';
@@ -17,11 +18,12 @@ const Hero = () => {
         <>
             <div className="">
                 {/* Navigation / Header */}
-                <nav className="flex flex-col px-5 md:px-8 lg:px-[140px] 2xl:px-[240px] py-[25px] md:py-0 md:my-6 2xl:my-6.5">
+                <nav className="flex flex-col px-5 md:px-8 lg:px-[240px] py-[25px] md:py-0 md:my-6 2xl:my-6.5">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             {/* Logo */}
-                            <span className="font-inter font-extrabold italic text-5xl tracking-tight">lux</span>
+                            {/* Logo */}
+                            <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={60} height={32} className="object-contain" />
                         </div>
 
                         {/* Desktop Navigation */}
