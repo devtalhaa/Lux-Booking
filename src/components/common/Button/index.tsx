@@ -13,17 +13,17 @@ const Button: React.FC<ButtonProps> = ({
     children,
     ...props
 }) => {
-    const baseStyles = 'inline-flex h-[35px] items-center justify-center font-medium transition-all duration-200 rounded-lg cursor-pointer';
+    const baseStyles = ' h-[34px] items-center justify-center font-medium transition-all duration-200 rounded-lg cursor-pointer';
 
     const variants = {
-        primary: 'bg-[#00C974] font-body text-sm px-4 py-2 text-black hover:bg-[#00331D] hover:text-white',
-        secondary: 'bg-black font-body text-white text-sm px-[16px] py-[8px] hover:bg-[#333333]',
+        primary: 'bg-[#00C974] font-body text-sm leading-[18px] px-[16px] py-[8px] text-black hover:bg-[#00331D] hover:text-white',
+        secondary: 'bg-black font-body text-white text-sm leading-[18px] px-[16px] py-[8px] hover:bg-[#333333]',
         outline: 'bg-transparent border-2 border-primary text-black hover:bg-primary hover:text-white',
         ghost: '',
     };
 
     const sizes = {
-        sm: 'px-3 py-1.5 text-sm',
+        sm: ' py-1.5 text-sm',
         md: 'px-4 py-2 text-base',
         lg: 'px-6 py-3 text-lg',
     };

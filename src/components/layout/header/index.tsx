@@ -18,12 +18,12 @@ const Header = () => {
         <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={60} height={32} className="object-contain" />
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-2">
-          <Button size="sm" variant="ghost" className="rounded-[8px] py-2 px-2 font-body bg-[#F7F7F7] text-sm text-black shadow-none border-none ring-0 outline-none font-medium"> {/* TODO: Add Dm-Sans font */}
-            <Globe className="w-[16px] h-[16px] mr-1" strokeWidth="1.5" /> En
+        <div className="hidden md:flex items-center gap-[8px]">
+          <Button size="sm" variant="ghost" className="rounded-[8px] py-2 px-2 font-body bg-[#F7F7F7] inline-flex leading-[18px] text-black shadow-none border-none ring-0 outline-none font-medium"> {/* TODO: Add Dm-Sans font */}
+            <Globe className="w-[16px] h-[16px] mr-1" strokeWidth="1.6" /> En
           </Button>
           <Link href="/login">
-            <Button variant="secondary">
+            <Button variant="secondary" className=''>
               Sign In
             </Button>
           </Link>
@@ -35,7 +35,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         <div className="flex md:hidden items-center gap-4">
           <Button className="rounded-lg bg-[#F7F7F7] hover:bg-[#F7F7F7] text-xs text-black hover:text-black shadow-none border-none ring-0 outline-none font-medium px-3 py-1.5">
-            <Globe className="w-4 h-4 mr-1.5" /> En
+            <Globe className="w-4 h-4 mr-1.5" /><span className=''>En</span> 
           </Button>
           <button
             onClick={() => setMobileMenuOpen(mobileMenuOpen)}
