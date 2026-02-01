@@ -19,7 +19,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-2">
-          <Button size="sm" variant="ghost" className="rounded-lg py-2 px-2 font-inter bg-[#F7F7F7] text-sm text-black shadow-none border-none ring-0 outline-none font-medium"> {/* TODO: Add Dm-Sans font */}
+          <Button size="sm" variant="ghost" className="rounded-[8px] py-2 px-2 font-body bg-[#F7F7F7] text-sm text-black shadow-none border-none ring-0 outline-none font-medium"> {/* TODO: Add Dm-Sans font */}
             <Globe className="w-[16px] h-[16px] mr-1" strokeWidth="1.5" /> En
           </Button>
           <Link href="/login">

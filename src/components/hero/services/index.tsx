@@ -13,7 +13,7 @@ const Services = () => {
       title: 'Handyman',
       icon: '/assets/Layer 1.svg',
       hoverIcon: '/assets/hover_layer1.svg',
-      pillColor: 'bg-gray-200 text-black',
+      pillColor: 'bg-[#E6E6E6]  text-black',
       hoverPillColor: 'group-hover:bg-[#EAECF4]',
       bgColor: 'bg-gray-card',
       hoverBg: 'hover:bg-[#F4F5F9]',
@@ -27,7 +27,7 @@ const Services = () => {
       icon: '/assets/Layer 2.svg',
       hoverIcon: '/assets/hover_layer2.svg',
       overlayIcon: '/assets/layer2over.svg',
-      pillColor: 'bg-gray-200 text-black',
+      pillColor: 'bg-[#E6E6E6] text-black',
       hoverPillColor: 'group-hover:bg-[#E6FAF2]',
       bgColor: 'bg-gray-card',
       hoverBg: 'hover:bg-[#F2FCF8]',
@@ -35,12 +35,12 @@ const Services = () => {
     },
     {
       id: 3,
-      distance: '3.0km away',
+      distance: '1km away',
       rating: '4.8',
       title: 'Dog Walking',
       icon: '/assets/Layer 3.svg',
       hoverIcon: '/assets/hover_layer3.svg',
-      pillColor: 'bg-gray-200 text-black',
+      pillColor: 'bg-[#E6E6E6] text-black font-medium',
       hoverPillColor: 'group-hover:bg-[#FEE9E4]',
       bgColor: 'bg-gray-card',
       hoverBg: 'hover:bg-[#FEF7F6]',
@@ -49,19 +49,19 @@ const Services = () => {
   ];
 
   return (
-    <section className="pb-12">
-      <Container className="px-5 md:px-8 lg:px-[240px] max-w-[920px] ">
+    <section className="">
+      <Container className="px-5 md:px-8 max-w-[960px] ">
         <div className="flex justify-center gap-4 w-full">
           {services.map((service) => (
             <div
               key={service.id}
-              className={`${service.bgColor} ${service.hoverBg || ''} group rounded-[32px] px-8 pt-8 pb-4 flex flex-col items-center text-center transition-colors duration-300 w-[309px] h-[299px] justify-between`}
+              className={`${service.bgColor} ${service.hoverBg || ''} group rounded-[16px] p-[16px] flex flex-col items-center text-center transition-colors duration-300 w-[309px] h-[299px] min-w-[309px] min-h-[299px] justify-between`}
             >
               <div className="w-full text-center">
-                <span className="text-sm font-bold text-black group-hover:hidden block">
+                <span className="text-sm font-medium text-black group-hover:hidden block font-body">
                   {service.distance}
                 </span>
-                <span className="text-sm font-bold text-black hidden group-hover:block ">
+                <span className="text-sm font-medium text-black hidden group-hover:block font-body">
                   {service.rating} Rating
                 </span>
               </div>
@@ -74,7 +74,7 @@ const Services = () => {
                       src={service.icon}
                       alt={service.title}
                       fill
-                      className="object-contain"
+                      className="object-contain w-[123px] h-[151px]"
                     />
                   </div>
                   {/* Hover Icon */}
@@ -83,7 +83,7 @@ const Services = () => {
                       src={service.hoverIcon}
                       alt={service.title}
                       fill
-                      className="object-contain"
+                      className="object-contain w-[162px] h-[151px]"
                     />
                   </div>
                   {/* Overlay Icon (e.g., Sparks) */}
@@ -93,14 +93,14 @@ const Services = () => {
                         src={service.overlayIcon}
                         alt="overlay"
                         fill
-                        className="object-contain"
+                        className="object-contain w-[130px] h-[151px]"
                       />
                     </div>
                   )}
                 </div>
               </div>
 
-              <div className={`px-4 py-2 rounded-full font-bold text-sm transition-colors duration-300 whitespace-nowrap${service.pillColor} ${service.hoverPillColor || ''}`}>
+              <div className={`px-[16px] py-[8px] rounded-[228.06px] font-medium text-sm transition-colors duration-300 whitespace-nowrap font-body ${service.pillColor} ${service.hoverPillColor || ''}`}>
                 {service.title}
               </div>
             </div>

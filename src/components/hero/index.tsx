@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div className="max-w-[960px] mx-auto mt-16">
       <div className="text-center w-full">
-        <h1 className="font-general-sans text-4xl md:text-[64px] font-semibold text-black tracking-[-0.05em] md:leading-[83px] mb-10">
+        <h1 className="font-general-sans text-4xl md:text-[64px] font-[600] text-black tracking-[-0.03em] md:leading-[83px] mb-10">
           Book Local Services Instantly.
         </h1>
       </div>
@@ -25,20 +25,20 @@ const Hero = () => {
       </div>
 
       {/* Call to Action Section */}
-      <section className="mt-10 pb-24">
-        <Container className="px-5 md:px-8 lg:px-[140px] 2xl:px-[240px]">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-xl  md:text-2xl text-black font-medium text-center md:text-left">
-              Fast, friendly, and always close by.
+      <section className="pt-[40px]">
+        <div className="">
+          <div className="flex items-center justify-between gap-4 md:flex-row">
+            <p className="text-xl text-nowrap text-[#4D4D4D] font-[500] text-center md:text-left text-[18px] font-body tracking-tight">
+              Fast, frendly, and always close by.
             </p>
             <Button
               variant="primary"
-              className="text-lg font-medium  w-[200px] md:w-auto md:px-6"
+              className="text-lg font-medium  w-[200px] md:w-auto text-nowrap"
             >
               Book Now
             </Button>
           </div>
-        </Container>
+        </div>
       </section>
 
 
