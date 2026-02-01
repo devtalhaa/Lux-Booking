@@ -50,8 +50,8 @@ const Services = () => {
 
   return (
     <section className="pb-12">
-      <Container className="px-5 md:px-8 lg:px-[140px] 2xl:px-[240px]">
-        <div className="flex flex-wrap justify-center gap-4">
+      <Container className="px-5 md:px-8 lg:px-[240px] max-w-[920px] ">
+        <div className="flex justify-center gap-4 w-full">
           {services.map((service) => (
             <div
               key={service.id}
@@ -61,15 +61,15 @@ const Services = () => {
                 <span className="text-sm font-bold text-black group-hover:hidden block">
                   {service.distance}
                 </span>
-                <span className="text-sm font-bold text-black hidden group-hover:block">
+                <span className="text-sm font-bold text-black hidden group-hover:block ">
                   {service.rating} Rating
                 </span>
               </div>
 
-              <div className="flex-1 flex items-center justify-center py-2">
+              <div className=" flex items-center justify-center py-2">
                 <div className={`relative ${service.dims || 'w-48 h-48'}`}>
                   {/* Default Icon */}
-                  <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0 opacity-100">
+                  <div className="absolute inset-0 transition-opacity duration-300  group-hover:opacity-0 opacity-100">
                     <Image
                       src={service.icon}
                       alt={service.title}
@@ -78,7 +78,7 @@ const Services = () => {
                     />
                   </div>
                   {/* Hover Icon */}
-                  <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-100 opacity-0">
+                  <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-100 opacity-0 ">
                     <Image
                       src={service.hoverIcon}
                       alt={service.title}
@@ -88,7 +88,7 @@ const Services = () => {
                   </div>
                   {/* Overlay Icon (e.g., Sparks) */}
                   {service.overlayIcon && (
-                    <div className="absolute bottom-10 -left-6 w-16 h-16 transition-opacity duration-300 group-hover:opacity-100 opacity-0 z-10">
+                    <div className="absolute bottom-10 -left-6 w-16 h-16 transition-opacity duration-300 group-hover:opacity-100 opacity-0 z-10 ">
                       <Image
                         src={service.overlayIcon}
                         alt="overlay"
@@ -100,7 +100,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className={`px-4 py-2 rounded-full font-bold text-sm transition-colors duration-300 whitespace-nowrap ${service.pillColor} ${service.hoverPillColor || ''}`}>
+              <div className={`px-4 py-2 rounded-full font-bold text-sm transition-colors duration-300 whitespace-nowrap${service.pillColor} ${service.hoverPillColor || ''}`}>
                 {service.title}
               </div>
             </div>

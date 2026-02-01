@@ -35,7 +35,7 @@ const StartEarning = () => {
               </p>
               <Button
                 variant="secondary"
-                className="px-8 py-3 text-base font-semibold"
+                className="px-8 py-3 text-base font-semibold "
               >
                 Apply to Join
               </Button>

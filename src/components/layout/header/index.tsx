@@ -11,16 +11,16 @@ const Header = () => {
 
   return (
     // <nav className="flex flex-col px-5 md:px-8 lg:px-[240px] py-[25px] md:py-0 md:my-6">
-    <nav className="flex flex-col py-[25px] max-w-[960px] mx-auto">
+    <nav className="flex flex-col py-[24px] max-w-[960px] mx-auto">
 
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={59.5} height={32} className="object-contain" />
+        <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={60} height={32} className="object-contain" />
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-2">
           <Button size="sm" variant="ghost" className="rounded-lg py-2 px-2 font-inter bg-[#F7F7F7] text-sm text-black shadow-none border-none ring-0 outline-none font-medium"> {/* TODO: Add Dm-Sans font */}
-            <Globe className="w-4 h-4 mr-1" strokeWidth="1.5" /> En
+            <Globe className="w-[16px] h-[16px] mr-1" strokeWidth="1.5" /> En
           </Button>
           <Link href="/login">
             <Button variant="secondary">

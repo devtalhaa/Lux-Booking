@@ -11,12 +11,12 @@ const About = () => {
             <Container>
                 <div className="flex flex-col md:flex-row items-center gap-16">
                     <div className="w-full md:w-1/2">
-                        <div className="relative rounded-[32px] overflow-hidden aspect-square md:aspect-[4/3]">
+                        <div className="relative rounded-[32px] overflow-hidden aspect-square md:aspect-[4/3] ">
                             <Image
                                 src="/assets/Hero.png"
                                 alt="Lux Services"
                                 fill
-                                className="object-cover"
+                                className="object-cover "
                                 priority
                             />
 
