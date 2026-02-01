@@ -50,18 +50,18 @@ const Services = () => {
 
   return (
     <section className="">
-      <Container className="px-5 md:px-8 max-w-[960px] ">
+      <div className="px-5 md:px-8 max-w-[960px] ">
         <div className="flex justify-center gap-4 w-full">
           {services.map((service) => (
             <div
               key={service.id}
-              className={`${service.bgColor} ${service.hoverBg || ''} group rounded-[16px] p-[16px] flex flex-col items-center text-center transition-colors duration-300 w-[309px] h-[299px] min-w-[309px] min-h-[299px] justify-between`}
+              className={`${service.bgColor} ${service.hoverBg || ''} cursor-pointer  group rounded-[16px] p-[16px] flex flex-col items-center text-center transition-colors duration-300 w-[309px] h-[299px] min-w-[309px] min-h-[299px] justify-between`}
             >
               <div className="w-full text-center">
-                <span className="text-sm font-medium text-black group-hover:hidden block font-body">
+                <span className="text-sm font-medium text-black group-hover:hidden block font-body leading-[18px]">
                   {service.distance}
                 </span>
-                <span className="text-sm font-medium text-black hidden group-hover:block font-body">
+                <span className="text-sm font-medium text-black hidden group-hover:block font-body leading-[18px]">
                   {service.rating} Rating
                 </span>
               </div>
@@ -69,44 +69,44 @@ const Services = () => {
               <div className=" flex items-center justify-center py-2">
                 <div className={`relative ${service.dims || 'w-48 h-48'}`}>
                   {/* Default Icon */}
-                  <div className="absolute inset-0 transition-opacity duration-300  group-hover:opacity-0 opacity-100">
+                  <div className="absolute inset-0 transition-opacity group-hover:opacity-0 opacity-100">
                     <Image
                       src={service.icon}
                       alt={service.title}
                       fill
-                      className="object-contain w-[123px] h-[151px]"
+                      className=" w-[123px] h-[151px]"
                     />
                   </div>
                   {/* Hover Icon */}
-                  <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-100 opacity-0 ">
+                  <div className="absolute inset-0 transition-opacity group-hover:opacity-100 opacity-0 ">
                     <Image
                       src={service.hoverIcon}
                       alt={service.title}
                       fill
-                      className="object-contain w-[162px] h-[151px]"
+                      className=" w-[162px] h-[151px]"
                     />
                   </div>
                   {/* Overlay Icon (e.g., Sparks) */}
                   {service.overlayIcon && (
-                    <div className="absolute bottom-10 -left-6 w-16 h-16 transition-opacity duration-300 group-hover:opacity-100 opacity-0 z-10 ">
+                    <div className="absolute bottom-10 -left-6 w-16 h-16 transition-opacity  group-hover:opacity-100 opacity-0 z-10 ">
                       <Image
                         src={service.overlayIcon}
                         alt="overlay"
                         fill
-                        className="object-contain w-[130px] h-[151px]"
+                        className=" w-[130px] h-[151px]"
                       />
                     </div>
                   )}
                 </div>
               </div>
 
-              <div className={`px-[16px] py-[8px] rounded-[228.06px] font-medium text-sm transition-colors duration-300 whitespace-nowrap font-body ${service.pillColor} ${service.hoverPillColor || ''}`}>
+              <div className={`px-[16px] py-[8px] rounded-[228.06px] font-medium text-[14px] transition-colors duration-300 whitespace-nowrap leading-[18px] font-body ${service.pillColor} ${service.hoverPillColor || ''}`}>
                 {service.title}
               </div>
             </div>
           ))}
         </div>
-      </Container>
+      </div>
     </section >
   );
 };

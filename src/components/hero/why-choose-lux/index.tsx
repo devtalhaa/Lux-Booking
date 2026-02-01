@@ -8,22 +8,22 @@ import Container from '../../common/Container';
 const WhyChooseLux = () => {
   return (
     <section className="mt-16 pb-16 bg-white">
-      <Container className="px-5 md:px-8 lg:px-[140px] 2xl:px-[240px]">
+      <Container className="">
         <div className="flex flex-col items-center text-center">
           {/* Heading */}
-          <h2 className="text-4xl md:text-6xl font-extrabold text-black mb-6 whitespace-nowrap">
+          <h2 className="text-4xl md:text-[48px] font-[600] font-general-sans text-black mb-[21px] whitespace-nowrap">
             Why Choose Lux?
           </h2>
 
           {/* Subtext */}
-          <p className="text-xl md:text-2xl text-[#4D4D4D] font-normal mb-8">
+          <p className=" text-[#4D4D4D] text-[18px] font-[500] leading-[25px] tracking-tight mb-[16px] font-body">
             Fast, friendly, and always close by.
           </p>
 
           {/* Button */}
           <Button
             variant="primary"
-            className="text-lg font-medium w-[200px] md:w-auto md:px-6"
+            className="text-lg font-medium w-[200px] md:w-auto "
           >
             Book Now
           </Button>

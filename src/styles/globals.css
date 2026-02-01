@@ -54,10 +54,10 @@
   --font-heading: "AR One Sans", sans-serif;
   --font-body: "DM Sans", sans-serif;
   --font-inter: "Inter", sans-serif;
-  --font-general-sans: "General Sans", "General Sans Placeholder", sans-serif;
+  --font-general-sans: "General Sans", sans-serif;
 
   /* Spacing */
-  --container-max-width: 1200px;
+  --container-max-width: 960px;
   --container-padding: 1.5rem;
 
   /* Legacy variables for compatibility */
