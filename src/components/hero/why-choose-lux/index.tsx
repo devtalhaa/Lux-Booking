@@ -11,19 +11,19 @@ const WhyChooseLux = () => {
       <div className="">
         <div className="flex flex-col items-center text-center">
           {/* Heading */}
-          <h2 className="text-4xl md:text-[48px] font-[600] font-general-sans text-black mb-[21px] whitespace-nowrap">
+          <h2 className="text-4xl md:text-[48px] font-[600] [letter-spacing:-0.01em] font-general-sans text-black mb-[21px] whitespace-nowrap">
             Why Choose Lux?
           </h2>
 
           {/* Subtext */}
-          <p className=" text-[#4D4D4D] text-[18px] font-[500] leading-[25px] tracking-tight mb-[16px] font-body">
-            Fast, friendly, and always close by.
+          <p className=" text-[#4D4D4D] text-[18px] font-[500] [letter-spacing:-0.03em] leading-[25px] tracking-tight mb-[16px] font-body">
+            Fast, frendly, and always close by.
           </p>
 
           {/* Button */}
           <Button
             variant="primary"
-            className="text-lg font-medium w-[200px] md:w-auto "
+            className="text-lg font-medium w-[200px] [letter-spacing:-0.01em] md:w-auto "
           >
             Book Now
           </Button>
@@ -33,7 +33,7 @@ const WhyChooseLux = () => {
         <div className="mt-16 grid grid-cols-1 font-body md:grid-cols-2 gap-[62px] items-center">
           {/* Text Column - Order 2 on mobile, Order 1 on Desktop */}
           <div className="text-center md:text-left order-2 md:order-1 ">
-            <h3 className="text-[26px] font-[600] text-black mb-[20px] leading-[34px] [word-spacing:-4px] tracking-[-0.01em]">
+            <h3 className="text-[26px] font-[600] text-black mb-[20px] leading-[34px] [word-spacing:-4px] [letter-spacing:-0.03em] tracking-[-0.01em]">
               Fast, easy booking <br />
               never wait for quotes
             </h3>
