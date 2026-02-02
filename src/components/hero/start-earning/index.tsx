@@ -6,43 +6,42 @@ import Container from '../../common/Container';
 
 const StartEarning = () => {
   return (
-    <section className="py-16 bg-[#F76C4B]">
-      <Container className="px-5 md:px-8 lg:px-[140px] 2xl:px-[240px]">
+    <section className="py-16   lg:h-[592px] bg-[#F76C4B]">
+      <div className=" max-w-[960px] mx-auto">
         {/* White Card Container */}
         <div className="bg-white rounded-2xl p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
             {/* Image Column - Order 1 on mobile and desktop */}
-            <div className="relative w-full flex justify-center order-1">
-              <div className="overflow-hidden rounded-xl">
+            <div className="relative order-1">
+              <div className="overflow-hidden ">
                 <img
                   src="/assets/earninglux.png"
                   alt="Start Earning With Lux"
-                  className="w-full h-auto object-contain"
+                  className="h-[416px] w-[416px] rounded rounded-[16px]"
                 />
               </div>
             </div>
 
             {/* Text Column - Order 2 on mobile and desktop */}
-            <div className="text-center md:text-left order-2">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-black mb-6 leading-tight">
-                Start Earning With
-                <br />
-                Lux
+            <div className="text-center md:text-left order-2 -ml-[40px] pl-[24px]">
+              <h2 className="text-3xl md:text-4xl lg:text-[48px] [letter-spacing:-0.01em] leading-[62px] [word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] ">
+                Start Earning <br />
+                With Lux
               </h2>
-              <p className="text-lg md:text-xl text-[#4D4D4D] font-normal leading-relaxed mb-8">
-                Join Lux, share your services, and start making money fast.
-                See why Lux is the easiest way to earn in CDMX.
+              <p className="text-lg md:text-[18px] leading-[25px] text-[#4D4D4D] font-body font-[500] [letter-spacing:-0.03em] [word-spacing:-0.2px] mb-[27px]">
+                <span className='[word-spacing:-2px]'>Join Lux,</span> share your services, and start making money fast. 
+                See <span className='[word-spacing:-2px]'>why Lux</span> is the easiest way to earn <span className='[word-spacing:-2px]'> in CDMX.</span>
               </p>
               <Button
                 variant="secondary"
-                className="px-8 py-3 text-base font-semibold "
+                className="px-8 py-[8px] text-[14px]font-[500] [word-spacing:-2px]"
               >
                 Apply to Join
               </Button>
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
