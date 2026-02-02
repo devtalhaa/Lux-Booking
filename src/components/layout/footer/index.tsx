@@ -49,23 +49,23 @@ const Footer = () => {
 
                     {/* Column 2 - Social Links */}
                     <div className="flex flex-col gap-y-[24px]">
-                        <a href="https://instagram.com" target="_blank" className="text-white text-base font-[500] hover:opacity-80 transition-opacity">
+                        <a href="https://instagram.com" target="_blank" className="text-white leading-[21px] text-base font-[500] hover:opacity-80 transition-opacity">
                             Instagram
                         </a>
-                        <a href="https://facebook.com" target="_blank" className="text-white text-base font-[500] hover:opacity-80 transition-opacity">
+                        <a href="https://facebook.com" target="_blank" className="text-white leading-[21px] text-base font-[500] hover:opacity-80 transition-opacity">
                             Facebook
                         </a>
-                        <a href="https://x.com" target="_blank" className="text-white text-base font-[500] hover:opacity-80 transition-opacity">
+                        <a href="https://x.com" target="_blank" className="text-white leading-[21px] text-base font-[500] hover:opacity-80 transition-opacity">
                             X
                         </a>
                     </div>
 
                     {/* Column 3 - Support Links */}
-                    <div className="flex flex-col gap-6">
-                        <a href="/chat" className="text-white text-base font-medium hover:opacity-80 transition-opacity">
+                    <div className="flex flex-col gap-y-[24px]">
+                        <a href="/chat" className="text-white leading-[21px] text-base font-medium hover:opacity-80 transition-opacity">
                             Chat with us
                         </a>
-                        <a href="/faqs" className="text-white text-base font-medium hover:opacity-80 transition-opacity">
+                        <a href="/faqs" className="text-white leading-[21px] text-base font-medium hover:opacity-80 transition-opacity">
                             FAQs
                         </a>
                     </div>
@@ -135,13 +135,13 @@ const Footer = () => {
 
                     {/* Legal Links - Desktop/Tablet */}
                     <div className="hidden sm:flex items-center gap-8">
-                        <Link href="/privacy" className="text-white text-sm font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/privacy" className="text-white text-[16px] font-medium hover:opacity-80 transition-opacity">
                             Privacy
                         </Link>
-                        <Link href="/terms" className="text-white text-sm font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/terms" className="text-white text-[16px] font-medium hover:opacity-80 transition-opacity">
                             Terms
                         </Link>
-                        <Link href="/safety" className="text-white text-sm font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/safety" className="text-white text-[16px] font-medium hover:opacity-80 transition-opacity">
                             Safety
                         </Link>
                     </div>
