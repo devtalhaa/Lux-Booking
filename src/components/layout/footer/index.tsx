@@ -11,7 +11,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-black text-white pt-[64px] ">
+        <footer className="bg-black text-white pt-[64px] pb-[64px]">
             <div className="max-w-[960px] mx-auto ">
                 {/* Top Section: Logo and Scroll to Top */}
                 <div className="flex items-center justify-between ">
@@ -30,14 +30,14 @@ const Footer = () => {
                 </div>
 
                 {/* Navigation Links - Desktop/Tablet */}
-                <div className="hidden sm:flex justify-between mb-16 lg:mt-[64px] font-body ">
+                <div className="hidden sm:flex justify-between mb-[64px] lg:mt-[64px] font-body ">
                     {/* Column 1 - Main Links */}
-                    <div className="flex flex-col gap-[24px] [letter-spacing:-0.02em] [word-spacing:-0.1px]">
-                        <a href="/book" className="text-white text-[16px] leading-[21px] font-[500] flex items-center gap-3 hover:opacity-80 transition-opacity">
-                            Book Now <img src="/assets/SmallArrow.svg" alt="" className='rotate-90 w-[15px] h-[14px]'/>
+                    <div className="flex flex-col gap-[24px] [letter-spacing:-0.01em] [word-spacing:-0.1.5px]">
+                        <a href="/book" className="text-white text-[16px] leading-[21px] font-[500] flex items-center gap-[10px] hover:opacity-80 transition-opacity">
+                            Book Now <img src="/assets/SmallArrow.svg" alt="" className='rotate-90 w-[14.5px] h-[15px]'/>
                         </a>
-                        <a href="/services" className="text-white text-[16px] leading-[21px] [word-spacing:-0.4px] font-[500] hover:opacity-80 transition-opacity">
-                            <span className='[word-spacing:-1.4px] '> What is Lux</span> & Our Services
+                        <a href="/services" className="text-white text-[16px] leading-[21px] [letter-spacing:-0.01em] [word-spacing:-2px] font-[500] hover:opacity-80 transition-opacity">
+                        What is Lux<span className='[word-spacing:-0.5px]'>&nbsp;& Our Services</span>
                         </a>
                     <a href="/why-choose-lux" className="text-white text-[16px] leading-[21px] font-[500] hover:opacity-80 transition-opacity">
                             Why Choose Lux
@@ -127,10 +127,10 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section: Copyright and Legal */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pt-16">
+                <div className="flex flex-col sm:flex-row font-body items-start sm:items-center justify-between ">
                     {/* Copyright */}
-                    <p className="text-gray-500 text-sm mb-4 sm:mb-0">
-                        © 2025 Lux. All rights reserved.
+                    <p className=" text-[16px] font-[500] [letter-spacing:-0.01em ] [word-spacing:-1.6px] sm:mb-0 text-[#808080] font-body">
+                        <span className=''>© 2025 Lux.</span> All rights reserved.
                     </p>
 
                     {/* Legal Links - Desktop/Tablet */}
