@@ -11,7 +11,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-black text-white py-[64px]">
+        <footer className="bg-black max-h-[475px] text-white py-[64px]">
             <div className="max-w-[960px] mx-auto ">
                 {/* Top Section: Logo and Scroll to Top */}
                 <div className="flex items-center justify-between ">
@@ -30,14 +30,14 @@ const Footer = () => {
                 </div>
 
                 {/* Navigation Links - Desktop/Tablet */}
-                <div className="hidden sm:flex justify-between mb-[64px] lg:mt-[64px] font-body ">
+                <div className="hidden sm:flex justify-between mb-[60px] lg:mt-[64px] font-body ">
                     {/* Column 1 - Main Links */}
                     <div className="flex flex-col gap-[24px] [letter-spacing:-0.01em] [word-spacing:-0.1.5px]">
                         <a href="/book" className="text-white text-[16px] leading-[20.8px] font-[500] flex items-center gap-[10px] hover:opacity-80 transition-opacity">
                             Book Now <img src="/assets/SmallArrow.svg" alt="" className='rotate-90 w-[14.5px] h-[15px]'/>
                         </a>
-                        <a href="/services" className="text-white text-[16px] leading-[20.8px] [letter-spacing:-0.01em] [word-spacing:-1.5px] font-[500] hover:opacity-80 transition-opacity">
-                        What is Lux<span className='[word-spacing:-0.5px]'>&nbsp;& Our Services</span>
+                        <a href="/services" className="text-white text-[16px] leading-[20.8px] [letter-spacing:-0.01em] [word-spacing:-2px] font-[500] hover:opacity-80 transition-opacity">
+                        What is Lux<span className='[word-spacing:-0px]'>&nbsp;& Our Services</span>
                         </a>
                     <a href="/why-choose-lux" className="text-white text-[16px] leading-[21px] font-[500] hover:opacity-80 transition-opacity">
                             Why Choose Lux
@@ -129,19 +129,19 @@ const Footer = () => {
                 {/* Bottom Section: Copyright and Legal */}
                 <div className="flex flex-col sm:flex-row font-body items-start sm:items-center justify-between ">
                     {/* Copyright */}
-                    <p className=" text-[16px] font-[500] [letter-spacing:-0.01em]  sm:mb-0 text-[#808080] font-body">
-                        <span className='[word-spacing:-1.6px]'>© 2025 Lux.</span> All rights reserved.
+                    <p className=" text-[16px] font-[500] [letter-spacing:-0.01em] leading-[20.8px] sm:mb-0 text-[#808080] font-body mt-[3px]">
+                        <span className='[word-spacing:-2px]'>© 2025 Lux.</span> All rights reserved.
                     </p>
 
                     {/* Legal Links - Desktop/Tablet */}
-                    <div className="hidden sm:flex items-center gap-[32px]">
-                        <Link href="/privacy" className="text-white text-[16px] font-[500] [letter-spacing:-0.01em] leading-[20.8px] hover:opacity-80 transition-opacity">
+                    <div className="hidden sm:flex items-center gap-x-[32px] ">
+                        <Link href="/privacy" className="text-white text-[16px] font-[500] [word-spacing:-1px] [letter-spacing:-0.01em] mt-[3px] leading-[20.8px] hover:opacity-80 transition-opacity">
                             Privacy
                         </Link>
-                        <Link href="/terms" className="text-white text-[16px] font-[500] [letter-spacing:-0.01em] leading-[20.8px] hover:opacity-80 transition-opacity">
+                        <Link href="/terms" className="text-white text-[16px] font-[500] [word-spacing:-1px] [letter-spacing:-0.01em] mt-[3px] leading-[20.8px] hover:opacity-80 transition-opacity">
                             Terms
                         </Link>
-                        <Link href="/safety" className="text-white text-[16px] font-[500] [letter-spacing:-0.01em]leading-[20.8px] hover:opacity-80 transition-opacity">
+                        <Link href="/safety" className="text-white text-[16px] font-[500] [word-spacing:-1px] [letter-spacing:-0.01em] mt-[3px] leading-[20.8px] hover:opacity-80 transition-opacity">
                             Safety
                         </Link>
                     </div>
