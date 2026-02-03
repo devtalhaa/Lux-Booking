@@ -24,17 +24,17 @@ const StartEarning = () => {
 
             {/* Text Column - Order 2 on mobile and desktop */}
             <div className="text-center md:text-left order-2 -ml-[40px] pl-[24px]">
-              <h2 className="text-3xl md:text-4xl lg:text-[48px] [letter-spacing:-0.01em] leading-[62px] [word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] ">
+              <h2 className="text-3xl md:text-4xl lg:text-[48px] [letter-spacing:-0.01em] leading-[62.4px] [word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] ">
                 Start Earning <br />
                 With Lux
               </h2>
-              <p className="text-lg md:text-[18px] leading-[25px] text-[#4D4D4D] font-body font-[500] [letter-spacing:-0.03em] [word-spacing:-0.2px] mb-[27px]">
-                <span className='[word-spacing:-2px]'>Join Lux,</span> share your services, and start making money fast. 
+              <p className="text-lg md:text-[18px] leading-[25.4px] text-[#4D4D4D] font-body font-[500] [letter-spacing:-0.03em] [word-spacing:-0.px] mb-[27px]">
+                <span className='[word-spacing:-2.4px]'>Join Lux,</span> share your services, and start making money fast. 
                 See <span className='[word-spacing:-2px]'>why Lux</span> is the easiest way to earn <span className='[word-spacing:-2px]'> in CDMX.</span>
               </p>
               <Button
                 variant="secondary"
-                className="px-8 py-[8px] text-[14px]font-[500] [word-spacing:-2px]"
+                className=" text-[14px] font-[500] [word-spacing:-2px] [letter-spacing:-0.009em] leading-[18.2px] "
               >
                 Apply to Join
               </Button>

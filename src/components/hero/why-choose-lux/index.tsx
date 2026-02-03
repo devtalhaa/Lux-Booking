@@ -16,7 +16,7 @@ const WhyChooseLux = () => {
           </h2>
 
           {/* Subtext */}
-          <p className=" text-[#4D4D4D] text-[18px] font-[500] [letter-spacing:-0.03em] leading-[25px] tracking-tight mb-[16px] font-body">
+          <p className=" text-[#4D4D4D] text-[18px] font-[500] [letter-spacing:-0.03em] leading-[25.2px] tracking-tight mb-[16px] font-body">
             Fast, frendly, and always close by.
           </p>
 
@@ -33,13 +33,14 @@ const WhyChooseLux = () => {
         <div className="mt-16 grid grid-cols-1 font-body md:grid-cols-2 gap-[62px] items-center">
           {/* Text Column - Order 2 on mobile, Order 1 on Desktop */}
           <div className="text-center md:text-left order-2 md:order-1 ">
-            <h3 className="text-[26px] font-[600] text-black mb-[20px] leading-[34px] [word-spacing:-4px] [letter-spacing:-0.03em] tracking-[-0.01em]">
+            <h3 className="text-[26px] font-[600] text-black mb-[20px] leading-[33.8px] [word-spacing:-3px] [letter-spacing:-0.0315em] ">
               Fast, easy booking <br />
-              never wait for quotes
+              <span className="[word-spacing:-3px]">never wait for quotes</span>
+              
             </h3>
-            <p className="text-[18px] text-[#4D4D4D] font-[500] leading-[25px] tracking-tight">
+            <p className="text-[18px] [letter-spacing:-0.03em] text-[#4D4D4D] font-[500] leading-[25.2px] tracking-tight">
               Book instantly with clear, upfront prices no hidden fees <br />
-              or time-wasting phone calls.
+              or time‑wasting phone calls.
             </p>
           </div>
 
@@ -72,11 +73,11 @@ const WhyChooseLux = () => {
 
           {/* Text Column - Order 2 on mobile, Order 2 on Desktop (right) */}
           <div className="text-center font-body md:text-left order-2 ">
-            <h3 className="md:text-[26px]  font-[600] text-black mb-[20px] leading-tight tracking-tight">
+            <h3 className="md:text-[26px]  font-[600] text-black mb-[20px] [letter-spacing:-0.03em] leading-[33.4px] tracking-tight">
               Vetted local providers
             </h3>
-            <p className="md:text-[18px] text-[#4D4D4D] font-[500] leading-[25px]  tracking-tight">
-              Every Lux pro is identity-checked and reviewed by
+            <p className="md:text-[18px] text-[#4D4D4D] font-[500] [letter-spacing:-0.03em] leading-[25.2px] [letter-spacing:-0.03em] tracking-tight">
+              Every Lux pro is identity‑checked and reviewed by
               neighbors, so you always get quality, reliable service.
             </p>
           </div>
@@ -86,12 +87,12 @@ const WhyChooseLux = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Text Column - Order 2 on mobile, Order 1 on Desktop (left) */}
           <div className="text-center md:text-left order-2 md:order-1">
-            <h3 className="text-3xl md:text-[26px] font-[600] font-body [letter-spacing:-0.03em] [word-spacing:-4px] text-black mb-[20px] tracking-tight leading-tight">
-              Effortless recurring<br />
-              appointments
+            <h3 className="text-3xl md:text-[26px] font-[600] font-body [letter-spacing:-0.0301em] [word-spacing:-3px] text-black mb-[20px]  leading-[33.8px]">
+              Effortless recurring <br />
+             <span className="[word-spacing:-3px] ">appointments</span> 
             </h3>
-            <p className="md:text-[18px] text-[#4D4D4D] font-[500] font-body [letter-spacing:-0.03em] [word-spacing:-0.2px] leading-[25px] text-nowrap tracking-tight">
-              Schedule once and relax Lux automatically handles your <br />
+            <p className="md:text-[18px] text-[#4D4D4D] font-[500] font-body [letter-spacing:-0.03em]  leading-[25.4px]  tracking-tight">
+              Schedule once and relax Lux automatically handles your 
               regular visits to keep everything consistently spotless.
             </p>
           </div>

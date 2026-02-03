@@ -14,9 +14,9 @@ import { Globe, Menu, X } from 'lucide-react';
 const Hero = () => {
 
   return (
-    <div className="max-w-[960px] mx-auto mt-16">
+    <div className="max-w-[960px] mx-auto mt-[64px]">
       <div className="text-center w-full">
-        <h1 className="font-general-sans text-4xl md:text-[64px] font-[600] text-black tracking-[-0.03em] md:leading-[83px] mb-10">
+        <h1 className="font-general-sans text-4xl md:text-[64px] font-[600] text-black [letter-spacing:-.03em] md:leading-[83.2px] mb-[40px]">
           Book Local Services Instantly.
         </h1>
       </div>
@@ -25,10 +25,10 @@ const Hero = () => {
       </div>
 
       {/* Call to Action Section */}
-      <section className="pt-[40px]">
+      <section className="pt-[41px]">
         <div className="">
           <div className="flex items-center justify-between gap-4 md:flex-row">
-            <p className="text-xl text-nowrap text-[#4D4D4D] font-[500] text-center md:text-left text-[18px] font-body tracking-tight">
+            <p className="text-xl leading-[25.2px] text-nowrap text-[#4D4D4D] font-[500] text-center md:text-left text-[18px] [letter-spacing:-.03em] font-body tracking-tight">
               Fast, frendly, and always close by.
             </p>
             <Button
