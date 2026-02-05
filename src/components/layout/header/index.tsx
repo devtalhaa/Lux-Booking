@@ -11,14 +11,14 @@ const Header = () => {
 
   return (
     // <nav className="flex flex-col px-5 md:px-8 lg:px-[240px] py-[25px] md:py-0 md:my-6">
-    <nav className="flex flex-col py-[24px] lg:max-w-[960px] custom-md:max-w-[746px] mx-auto">
+    <nav className="flex flex-col custom-md:px-0 px-[20px] py-[24px] lg:max-w-[960px] custom-md:max-w-[746px] mx-auto">
 
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={60} height={32} className=""/>
+        <img src="/assets/mainLogo.svg" alt="Lux Logo" className="w-[67px] h-[36px] custom-md:w-[60px] custom-md:h-[32px]" />
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-[8px]">
+        <div className="hidden custom-md:flex items-center gap-[8px]">
           <Button size="sm" variant="ghost" className="rounded-[8px] max-h-[33px] max-w-[54px] [letter-spacing:-.01em] py-2 px-2 font-body bg-[#F7F7F7] inline-flex leading-[18px] text-black shadow-none border-none ring-0 outline-none font-medium"> {/* TODO: Add Dm-Sans font */}
             <Globe className="w-[16.25px] h-[16.25px] mr-[5px]" strokeWidth="1.6" /> En
           </Button>
@@ -33,19 +33,19 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="flex md:hidden items-center gap-4">
-          <Button className="rounded-lg bg-[#F7F7F7] hover:bg-[#F7F7F7] text-xs text-black hover:text-black shadow-none border-none ring-0 outline-none font-medium px-3 py-1.5">
-            <Globe className="w-4 h-4 mr-1.5" /><span className=''>En</span> 
-          </Button>
+        <div className="flex custom-md:hidden items-center  gap-[10px] ">
+          <button className="rounded-lg bg-[#F7F7F7] w-[60px] h-[33px] flex items-center justify-center hover:bg-[#F7F7F7] text-[14px] text-black hover:text-black shadow-none border-none ring-0 outline-none font-normal ">
+            <Globe className="mr-1.5 w-4 h-4 mb-[1px]" strokeWidth={1.5} /><span className='mb-['>En</span>
+          </button>
           <button
-            onClick={() => setMobileMenuOpen(mobileMenuOpen)}
-            className="p-2 text-black"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-black"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <img src="/assets/close.svg" alt="close" className='p-[12px] ' />
             ) : (
-              <Menu className="w-6 h-6" />
+              <img src="/assets/hamburger.svg" alt="menu" className='stroke-black box-content py-[11px] pl-[10px] pr-[9px] h-[12px] w-[17px]' />
             )}
           </button>
         </div>
@@ -53,13 +53,13 @@ const Header = () => {
 
       {/* Mobile Menu Panel */}
       {mobileMenuOpen && (
-        <div className="flex flex-col gap-4 mt-8 md:hidden">
+        <div className="flex flex-col gap-[8px] mt-8 md:hidden">
           <Link href="/login" className="w-full">
-            <Button variant="secondary" className="w-full py-2 text-lg">
+            <Button variant="secondary" className="w-full py-2 text-lg leading-[18.2px] [letter-spacing:-.01em]">
               Sign In
             </Button>
           </Link>
-          <Button variant="primary" className="w-full py-2 text-lg font-medium">
+          <Button variant="primary" className="w-full py-[8px] text-lg font-medium leading-[18px]">
             Offering Services?
           </Button>
         </div>

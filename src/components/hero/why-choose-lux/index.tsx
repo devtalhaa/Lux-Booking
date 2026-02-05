@@ -11,7 +11,7 @@ const WhyChooseLux = () => {
       <div className="">
         <div className="flex flex-col items-center text-center">
           {/* Heading */}
-          <h2 className="text-4xl custom-md:text-[40px] lg:text-[48px] font-[600] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-general-sans text-black custom-md:mb-[18.5px] lg:mb-[20px] whitespace-nowrap">
+          <h2 className="text-[40px] custom-md:text-[40px] lg:text-[48px] font-[600] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-general-sans lg:leading-[62.4px] text-black custom-md:mb-[18.5px] lg:mb-[16px] whitespace-nowrap">
             Why Choose Lux?
           </h2>
 
