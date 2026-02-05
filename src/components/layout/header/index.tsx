@@ -11,11 +11,11 @@ const Header = () => {
 
   return (
     // <nav className="flex flex-col px-5 md:px-8 lg:px-[240px] py-[25px] md:py-0 md:my-6">
-    <nav className="flex flex-col py-[24px]  max-w-[960px] mx-auto">
+    <nav className="flex flex-col py-[24px] lg:max-w-[960px] custom-md:max-w-[746px] mx-auto">
 
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={60} height={32} className="" />
+        <Image src="/assets/mainLogo.svg" alt="Lux Logo" width={60} height={32} className=""/>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-[8px]">

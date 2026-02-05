@@ -7,16 +7,16 @@ import Container from '../../common/Container';
 
 const WhyChooseLux = () => {
   return (
-    <section className="mt-16 pb-16 bg-white max-w-[960px] mx-auto ">
+    <section className="mt-16 custom-md:pb-[48px] lg:pb-16 bg-white custom-md:max-w-[746px] lg:max-w-[960px] mx-auto ">
       <div className="">
         <div className="flex flex-col items-center text-center">
           {/* Heading */}
-          <h2 className="text-4xl md:text-[48px] font-[600] [letter-spacing:-0.01em] font-general-sans text-black mb-[21px] whitespace-nowrap">
+          <h2 className="text-4xl custom-md:text-[40px] lg:text-[48px] font-[600] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-general-sans text-black custom-md:mb-[18.5px] lg:mb-[20px] whitespace-nowrap">
             Why Choose Lux?
           </h2>
 
           {/* Subtext */}
-          <p className=" text-[#4D4D4D] text-[18px] font-[500] [letter-spacing:-0.03em] leading-[25.2px] tracking-tight mb-[16px] font-body">
+          <p className=" text-[#4D4D4D]  custom-md:text-[20px] lg:text-[18px] font-[500] [letter-spacing:-0.03em] custom-md:leading-[28px] lg:leading-[25.2px] tracking-tight mb-[16px] font-body">
             Fast, frendly, and always close by.
           </p>
 
@@ -30,17 +30,19 @@ const WhyChooseLux = () => {
         </div>
 
         {/* Fast, Easy Booking Section */}
-        <div className="mt-16 grid grid-cols-1 font-body md:grid-cols-2 gap-[62px] items-center">
+        <div className=" custom-md:mt-[32px] lg:mt-16 grid grid-cols-1 font-body md:grid-cols-2  custom-md:gap-[64px] lg:gap-[62px] items-center">
           {/* Text Column - Order 2 on mobile, Order 1 on Desktop */}
-          <div className="text-center md:text-left order-2 md:order-1 ">
+          <div className="text-center  md:text-left order-2 md:order-1 lg:max-h-[138px]">
             <h3 className="text-[26px] font-[600] text-black mb-[20px] leading-[33.8px] [word-spacing:-3px] [letter-spacing:-0.0315em] ">
               Fast, easy booking <br />
               <span className="[word-spacing:-3px]">never wait for quotes</span>
               
             </h3>
-            <p className="text-[18px] [letter-spacing:-0.03em] text-[#4D4D4D] font-[500] leading-[25.2px] tracking-tight">
-              Book instantly with clear, upfront prices no hidden fees <br />
-              or time‑wasting phone calls.
+            <p className="custom-md:text-[20px] lg:text-[18px] [letter-spacing:-0.03em] text-[#4D4D4D] font-[500] custom-md:leading-[28px] lg:leading-[25.2px] tracking-tight">
+              Book instantly with clear, upfront
+              <span className='custom-md:block lg:inline'> prices no hidden fees <span className='lg:hidden'>or time‑wasting phone calls.</span> </span>
+              <span className="lg:block  custom-md:hidden ">
+              or time‑wasting phone calls. </span>
             </p>
           </div>
 
@@ -51,18 +53,18 @@ const WhyChooseLux = () => {
               <img
                 src="/assets/easybooking.webp"
                 alt="Fast, easy booking interface"
-                className=" md:w-auto max-w-full object-contain rounded-[16px] h-[496px]"
+                className=" md:w-auto max-w-full object-contain rounded-[16px] custom-md:h-[378px] lg:h-[496px]"
               />
             </div>
           </div>
         </div>
 
         {/* Vetted Local Providers Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-[64px] items-center">
+        <div className=" custom-md:mt-[32px] lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-[64px] items-center">
           {/* Image Column - Order 1 on mobile, Order 1 on Desktop (left) */}
-          <div className="relative w-full h-auto md:h-[446px] flex justify-center order-1">
+          <div className="relative w-full custom-md:h-[340px] lg:h-[446px] flex justify-center order-1">
             {/* Wrapper with overflow-hidden ensures rounded corners clip the image */}
-            <div className="overflow-hidden rounded-xl w-full h-full">
+            <div className="overflow-hidden rounded-[16px] w-full custom-md:-h-[340px] lg:h-full">
               <img
                 src="/assets/localprovider.png"
                 alt="Vetted local providers"
@@ -73,10 +75,10 @@ const WhyChooseLux = () => {
 
           {/* Text Column - Order 2 on mobile, Order 2 on Desktop (right) */}
           <div className="text-center font-body md:text-left order-2 ">
-            <h3 className="md:text-[26px]  font-[600] text-black mb-[20px] [letter-spacing:-0.03em] leading-[33.4px] tracking-tight">
+            <h3 className="md:text-[26px]  font-[600] text-black mb-[20px] [letter-spacing:-0.03em] md:leading-[33.8px] lg:leading-[33.4px] tracking-tight">
               Vetted local providers
             </h3>
-            <p className="md:text-[18px] text-[#4D4D4D] font-[500] [letter-spacing:-0.03em] leading-[25.2px] [letter-spacing:-0.03em] tracking-tight">
+            <p className="custom-md:text-[20px] lg:text-[18px] text-[#4D4D4D] font-[500] [letter-spacing:-0.03em] custom-md:leading-[28px] lg:leading-[25.2px] [letter-spacing:-0.03em] tracking-tight">
               Every Lux pro is identity‑checked and reviewed by
               neighbors, so you always get quality, reliable service.
             </p>
@@ -84,27 +86,27 @@ const WhyChooseLux = () => {
         </div>
 
         {/* Effortless Recurring Appointments Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="custom-md:mt-[32px] lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Text Column - Order 2 on mobile, Order 1 on Desktop (left) */}
           <div className="text-center md:text-left order-2 md:order-1">
-            <h3 className="text-3xl md:text-[26px] font-[600] font-body [letter-spacing:-0.0301em] [word-spacing:-3px] text-black mb-[20px]  leading-[33.8px]">
+            <h3 className=" custom-md:text-[26px] font-[600] font-body md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.0301em] custom-md:[word-spacing:2.2px] lg:[word-spacing:-3px] text-black mb-[20px]  leading-[33.8px]">
               Effortless recurring <br />
              <span className="[word-spacing:-3px] ">appointments</span> 
             </h3>
-            <p className="md:text-[18px] text-[#4D4D4D] font-[500] font-body [letter-spacing:-0.03em]  leading-[25.4px]  tracking-tight">
+            <p className=" custom-md:text-[20px] lg:text-[18px] text-[#4D4D4D] font-[500] font-body [letter-spacing:-0.03em] custom-md:leading-[28px] lg:leading-[25.4px]  tracking-tight">
               Schedule once and relax Lux automatically handles your 
               regular visits to keep everything consistently spotless.
             </p>
           </div>
 
           {/* Image Column - Order 1 on mobile, Order 2 on Desktop (right) */}
-          <div className="relative w-full h-auto md:h-[496px] flex justify-center md:justify-end order-1 md:order-2">
+          <div className="relative w-full custom-md:h-[377px] lg:h-[496px] flex justify-center md:justify-end order-1 md:order-2">
             {/* Wrapper with overflow-hidden ensures rounded corners clip the image */}
-            <div className="overflow-hidden rounded-xl">
+            <div className="overflow-hidden rounded-[16px]">
               <img
                 src="/assets/recurringappointments.webp"
                 alt="Effortless recurring appointments"
-                className="h-auto md:h-full w-auto max-w-full object-contain rounded-xl"
+                className="custom-md:h-[377px] lg:h-full w-full  rounded-[16px]"
               />
             </div>
           </div>

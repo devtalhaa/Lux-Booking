@@ -65,11 +65,16 @@
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-body);
   --font-heading: var(--font-heading);
+
+  /* Custom breakpoints */
+  --breakpoint-lg: 1439px;
+  --breakpoint-custom-md: 810px;
+  --breakpoint-mobile: 320px;
 
   /* Custom colors for Tailwind */
   --color-primary: #00C974;

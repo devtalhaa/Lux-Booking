@@ -6,13 +6,13 @@ import Container from '../../common/Container';
 
 const StartEarning = () => {
   return (
-    <section className="py-16   lg:h-[592px] bg-[#F76C4B]">
-      <div className=" max-w-[960px] mx-auto">
-        {/* White Card Container */}
+    <section className="custom-md:py-[48px] custom-md:px-[32px] lg:py-16 lg:px-[32px] custom-md:h-[560px] lg:h-[592px] bg-[#F76C4B]">
+      <div className="max-w-[960px] mx-auto">
+        {/* White Card Conlg:tainer */}
         <div className="bg-white rounded-2xl p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
+          <div className="flex flex-col md:flex-row items-center">
             {/* Image Column - Order 1 on mobile and desktop */}
-            <div className="relative order-1">
+            <div className="relative order-1 flex-shrink-0">
               <div className="overflow-hidden ">
                 <img
                   src="/assets/earninglux.png"
@@ -23,14 +23,13 @@ const StartEarning = () => {
             </div>
 
             {/* Text Column - Order 2 on mobile and desktop */}
-            <div className="text-center md:text-left order-2 -ml-[40px] pl-[24px]">
-              <h2 className="text-3xl md:text-4xl lg:text-[48px] [letter-spacing:-0.01em] leading-[62.4px] [word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] ">
-                Start Earning <br />
-                With Lux
+            <div className="text-center md:text-left order-2 flex-1  pl-[24px]">
+              <h2 className="text-3xl break-words custom-md:text-[40px] lg:text-[48px] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] custom-md:leading-[52px] lg:leading-[62.4px] custom-md:[word-spacing:-4px] lg:[word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] ">
+                Start Earning <span className='lg:block break-words lg:[word-spacing:-4.8px]'>With Lux</span>
+
               </h2>
-              <p className="text-lg md:text-[18px] leading-[25.4px] text-[#4D4D4D] font-body font-[500] [letter-spacing:-0.03em] [word-spacing:-0.px] mb-[27px]">
-                <span className='[word-spacing:-2.4px]'>Join Lux,</span> share your services, and start making money fast. 
-                See <span className='[word-spacing:-2px]'>why Lux</span> is the easiest way to earn <span className='[word-spacing:-2px]'> in CDMX.</span>
+              <p className="text-lg custom-md:text-[20px] lg:text-[18px] break-words custom-md:leading-[28px] lg:leading-[25.4px] text-[#4D4D4D]  text-wrap font-body font-[500] [letter-spacing:-0.03em] [word-spacing:-0.px] mb-[27px]">
+                <span className='[word-spacing:-2.4px] break-words'>Join Lux,</span> share your services, and start making money fast. See <span className='[word-spacing:-2.4px] break-words'>why Lux</span> is the easiest way to earn <span className='[word-spacing:-2px]'> in CDMX.</span>
               </p>
               <Button
                 variant="secondary"

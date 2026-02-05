@@ -50,12 +50,12 @@ const Services = () => {
 
   return (
     <section className="">
-      <div className="px-5 md:px-8 max-w-[960px] ">
-        <div className="flex justify-center gap-4 w-full">
+      <div className="px-5 md:px-8 custom-md:max-w-[746px] lg:max-w-[960px] ">
+        <div className="flex justify-center md:gap-4 w-full ">
           {services.map((service) => (
             <div
               key={service.id}
-              className={`${service.bgColor} ${service.hoverBg || ''} cursor-pointer  group rounded-[16px]  flex flex-col items-center text-center transition-colors duration-300 min-w-[309px] min-h-[299px] justify-between`}
+              className={`${service.bgColor} ${service.hoverBg || ''} cursor-pointer  group rounded-[16px]  flex flex-col items-center text-center transition-colors duration-300  custom-md:min-w-[238px] lg:w-[299px] lg:min-h-[299px] lg:min-w-[309px] custom-md:min-h-[299px] justify-between`}
             >
               <div className="w-full text-center">
                 <span className="text-[14px] font-[500] text-black group-hover:hidden block font-body [letter-spacing:-.01em] mt-[16px] leading-[18.2px]">

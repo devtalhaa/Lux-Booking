@@ -11,8 +11,8 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-black max-h-[475px] text-white py-[64px]">
-            <div className="max-w-[960px] mx-auto ">
+        <footer className="bg-black text-white custom-md:py-[48px] lg:py-[64px]">
+            <div className=" custom-md:max-w-[746px] lg:max-w-[960px] mx-auto ">
                 {/* Top Section: Logo and Scroll to Top */}
                 <div className="flex items-center justify-between ">
                     {/* Logo */}
@@ -30,9 +30,9 @@ const Footer = () => {
                 </div>
 
                 {/* Navigation Links - Desktop/Tablet */}
-                <div className="hidden sm:flex justify-between mb-[60px] lg:mt-[64px] font-body ">
+                <div className="hidden sm:flex justify-between mb-[60px] custom-md:mt-[64px] font-body ">
                     {/* Column 1 - Main Links */}
-                    <div className="flex flex-col gap-[24px] [letter-spacing:-0.01em] [word-spacing:-0.1.5px]">
+                    <div className="flex flex-col custom-md:gap-[32px] lg:gap-[24px] [letter-spacing:-0.01em] [word-spacing:-0.1.5px]">
                         <a href="/book" className="text-white text-[16px] leading-[20.8px] font-[500] flex items-center gap-[10px] hover:opacity-80 transition-opacity">
                             Book Now <img src="/assets/SmallArrow.svg" alt="" className='rotate-90 w-[14.5px] h-[15px]'/>
                         </a>
@@ -63,7 +63,7 @@ const Footer = () => {
                     {/* Column 3 - Support Links */}
                     <div className="flex flex-col gap-y-[24px]">
                         <a href="/chat" className="text-white leading-[20.8px] [letter-spacing:-0.01em] text-base font-medium hover:opacity-80 transition-opacity">
-                           <span className="[word-spacing:-2px]">Chat with</span> us
+                           <span className="[word-spacing:-2px] lg:mr-0 custom-md:mr-[2px]">Chat with</span> us
                         </a>
                         <a href="/faqs" className="text-white leading-[20.8px] [word-spacing:-2px] [letter-spacing:-0.01em] text-base font-medium hover:opacity-80 transition-opacity">
                             FAQs
