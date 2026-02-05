@@ -7,12 +7,12 @@ const WhatIsLux = () => {
     const comingSoonServices = ['Personal Traning', 'Plant Care', 'Cooking', 'Language Tutor'];
 
     return (
-        <section className="w-full bg-[#F4F3FB] max-h-[814px] mt-[64px]">
-            <div className="max-w-[960px] mx-auto py-[64px]">
+        <section className="w-full bg-[#F4F3FB] max-h-[814px] lg:px-0 custom-md:px-[32px] lg:py-0 custom-md:py-[48px] custom-md:mt-[48px] lg:mt-[64px]">
+            <div className="max-w-[960px] mx-auto lg:py-[64px]">
                 {/* Top Row - Image and What Is Lux Card */}
-                <div className="grid grid-cols-[1.325fr_1fr] gap-[16px]">
+                <div className="grid custom-md:grid-cols-[1.272fr_1fr] lg:grid-cols-[1.325fr_1fr] gap-[16px] items-start">
                     {/* Left - Image */}
-                    <div className="col-span-1.325 ">
+                    <div className="lg:col-span-1.32 custom-md:col-span-1.272">
                         <img
                             src="/assets/Lux1.avif"
                             alt="What Is Lux"
@@ -22,11 +22,11 @@ const WhatIsLux = () => {
                     </div>
 
                     {/* Right - What Is Lux Card */}
-                    <div className="col-span-1 bg-white rounded-[16px] p-[24px] flex flex-col justify-center">
-                        <h2 className="text-[48px] leading-[62.4px] [letter-spacing:-0.01em] font-[600] font-general-sans text-black ">
+                    <div className="col-span-1  bg-white rounded-[16px]  py-[24px] px-[24px] flex flex-col justify-between h-[347px]">
+                        <h2 className="custom-md:text-[40px] lg:text-[48px] leading-[62.4px] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-[600] -mt-1 font-general-sans text-black ">
                             What Is Lux
                         </h2>
-                        <p className="text-[18px] leading-[25.2px] [letter-spacing:-0.03em] mt-[161px] font-[500] font-body font-body text-[#4D4D4D] ">
+                        <p className="custom-md:text-[20px] lg:text-[18px] custom-md:leading-[28px] lg:leading-[25.2px] [letter-spacing:-0.03em]  font-[500] font-body font-body text-[#4D4D4D] ">
                             Lux connects Mexico‑City locals with <span className='lg:block '>verified pros for everyday tasks fast, simple, </span>nearby.
                         </p>
                     </div>

@@ -7,11 +7,11 @@ import Container from '../../common/Container';
 
 const WhyChooseLux = () => {
   return (
-    <section className="mt-16 custom-md:pb-[48px] lg:pb-16 bg-white custom-md:max-w-[746px] lg:max-w-[960px] mx-auto ">
+    <section className="custom-md:mt-[48px] lg:mt-16 custom-md:pb-[48px] lg:pb-16 bg-white custom-md:max-w-[746px] lg:max-w-[960px] mx-auto ">
       <div className="">
         <div className="flex flex-col items-center text-center">
           {/* Heading */}
-          <h2 className="text-[40px] custom-md:text-[40px] lg:text-[48px] font-[600] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-general-sans lg:leading-[62.4px] text-black custom-md:mb-[18.5px] lg:mb-[16px] whitespace-nowrap">
+          <h2 className="text-[40px] custom-md:text-[40px] lg:text-[48px] font-[600] custom-md:[letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-general-sans  custom-md:leading-[52px] lg:leading-[62.4px] text-black custom-md:mb-[16px] lg:mb-[16px] whitespace-nowrap">
             Why Choose Lux?
           </h2>
 
@@ -49,7 +49,7 @@ const WhyChooseLux = () => {
           {/* Image Column - Order 1 on mobile, Order 2 on Desktop */}
           <div className="relative w-full  flex justify-center md:justify-end order-1 md:order-2">
             {/* Wrapper with overflow-hidden ensures rounded corners clip the image */}
-            <div className="overflow-hidden rounded-xl">
+            <div className="overflow-hidden rounded-[16px]">
               <img
                 src="/assets/easybooking.webp"
                 alt="Fast, easy booking interface"
@@ -68,7 +68,7 @@ const WhyChooseLux = () => {
               <img
                 src="/assets/localprovider.png"
                 alt="Vetted local providers"
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-[16px]"
               />
             </div>
           </div>
