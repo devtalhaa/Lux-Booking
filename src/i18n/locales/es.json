@@ -1,0 +1,84 @@
+{
+    "header": {
+        "signIn": "Iniciar sesión",
+        "offeringServices": "¿Ofreciendo servicios?"
+    },
+    "hero": {
+        "title": "Reserva Servicios Locales Ya.",
+        "subtitle": "Rápido, amigable y siempre cerca.",
+        "bookNow": "Reserva ya"
+    },
+    "services": {
+        "handyman": "Mantenimiento",
+        "homeCleaning": "Limpieza del hogar",
+        "dogWalking": "Paseo perros",
+        "dogWalkingFull": "Paseo de Perros",
+        "dogWalkingFullMobile": "Paseo de perros",
+        "laundryPickUp": "Recogida de lavandería",
+        "rating": "nota",
+        "distancePrefix": "A",
+        "distanceSuffix": "km"
+    },
+    "whatIsLux": {
+        "title": "¿Qué Es Lux?",
+        "description": "Lux conecta a los habitantes de la Ciudad de México con profesionales verificados para tareas cotidianas de manera rápida, simple y cercana.",
+        "currentServices": "Servicios actuales",
+        "currentServicesLower": "Servicios actuales",
+        "servicesComingSoon": "Próximamente Servicios",
+        "servicesComingSoonLower": "Servicios próximamente",
+        "personalTraining": "Entrenamiento Personal",
+        "plantCare": "Cuidado de Plantas",
+        "cooking": "Cocinar",
+        "languageTutor": "Tutor de Idiomas"
+    },
+    "whyChooseLux": {
+        "title": "¿Por Qué Elegir Lux?",
+        "subtitle": "Rápido, amigable y siempre cerca.",
+        "fastBookingTitle": "Reservación rápida y fácil",
+        "fastBookingTitleMobile": "Reservación rápida y fácil",
+        "fastBookingSubtitle": "nunca esperar por cotizaciones",
+        "fastBookingSubtitleMobile": "nunca esperar por",
+        "fastBookingSubtitleMobile2": "cotizaciones",
+        "fastBookingSubtitleTablet": "nunca esperar por cotizaciones",
+        "fastBookingDesc": "Reserva al instante con precios claros y sin tarifas ocultas ni llamadas que hacen perder el tiempo.",
+        "vettedProvidersTitle": "Proveedores locales verificados",
+        "vettedProvidersTitleMobile": "Proveedores locales",
+        "vettedProvidersTitleMobile2": "verificados",
+        "vettedProvidersDesc": "Cada profesional de Lux está verificado y revisado por vecinos, así que siempre obtienes un servicio de calidad y confiable.",
+        "effortlessTitle": "Recurrente sin esfuerzo",
+        "effortlessTitleMobile": "Citas recurrentes",
+        "effortlessTitleTablet": "Recurrente sin esfuerzo",
+        "effortlessSubtitle": "citas",
+        "effortlessSubtitleTablet": "citas",
+        "effortlessDesc": "Programa una vez y relájate, Lux maneja automáticamente tus visitas regulares para mantener todo consistentemente impecable."
+    },
+    "startEarning": {
+        "title": "Comienza A Ganar",
+        "titleMobile": "Comienza A",
+        "titleSpan": "Con Lux",
+        "titleSpanMobile": "Ganar Con Lux",
+        "description": "Únete a Lux, comparte tus servicios y comienza a ganar dinero rápido. Descubre por qué Lux es la manera más fácil de ganar en CDMX.",
+        "descriptionMobile": "Únete a Lux, comparte tus servicios, y comienza a ganar dinero rápido. Ve por qué Lux es la forma más fácil de ganar en CDMX.",
+        "applyToJoin": "Aplica para unirte"
+    },
+    "footer": {
+        "bookNow": "Reserva ya",
+        "whatIsLux": "¿Qué es Lux",
+        "ourServices": "& Nuestros Servicios",
+        "whyChooseLux": "¿Por qué elegir Lux?",
+        "startEarning": "Comienza a ganar",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "x": "X",
+        "chatWithUs": "Chatea con nosotros",
+        "faqs": "Preguntas Frecuentes",
+        "privacy": "Privacidad",
+        "privacyMobile": "Chatea con nosotros",
+        "terms": "Términos",
+        "termsMobile": "Preguntas Frecuentes",
+        "safety": "Seguridad",
+        "safetyMobile": "Preguntas Frecuentes",
+        "copyright": "© 2025 Lux.",
+        "allRightsReserved": "Todos los derechos reservados."
+    }
+}
