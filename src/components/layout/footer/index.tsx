@@ -11,13 +11,13 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-black text-white custom-md:py-[48px] lg:py-[64px]">
-            <div className=" custom-md:max-w-[746px] lg:max-w-[960px] mx-auto ">
+        <footer className="bg-black text-white py-[32px] px-[20px] custom-md:px-0 custom-md:py-[48px] lg:py-[64px]">
+            <div className=" max-w-[350px] custom-md:max-w-[960px] mx-auto ">
                 {/* Top Section: Logo and Scroll to Top */}
                 <div className="flex items-center justify-between ">
                     {/* Logo */}
                     <span className="font-inter font-black italic text-4xl md:text-5xl tracking-tight text-white">
-                        <img src="/assets/Logo_white.svg" alt=""  className='h-[43px]'/></span>
+                        <img src="/assets/Logo_white.svg" alt="Lux White Logo"  className='h-[42px] w-[80px] custom-md:w-auto'/></span>
 
                     {/* Scroll to Top Button */}
                     <button
@@ -25,12 +25,12 @@ const Footer = () => {
                         className="w-[40px]  h-[40px] bg-[#00C974] rounded-lg flex items-center justify-center hover:bg-[#00A85E] transition-colors"
                         aria-label="Scroll to top"
                     >
-                        <img src="/assets/Arrow.svg" alt="" />
+                        <img src="/assets/Arrow.svg" alt="Arrow Image" />
                     </button>
                 </div>
 
                 {/* Navigation Links - Desktop/Tablet */}
-                <div className="hidden sm:flex justify-between mb-[60px] custom-md:mt-[64px] font-body ">
+                <div className="hidden custom-md:flex justify-between mb-[60px] custom-md:mt-[64px] font-body ">
                     {/* Column 1 - Main Links */}
                     <div className="flex flex-col custom-md:gap-[32px] lg:gap-[24px] [letter-spacing:-0.01em] [word-spacing:-0.1.5px]">
                         <a href="/book" className="text-white text-[16px] leading-[20.8px] font-[500] flex items-center gap-[10px] hover:opacity-80 transition-opacity">
@@ -72,55 +72,55 @@ const Footer = () => {
                 </div>
 
                 {/* Navigation Links - Mobile */}
-                <div className="flex flex-col sm:hidden gap-8 mb-12">
+                <div className="flex flex-col custom-md:hidden gap-[32px] mt-[64px] mb-[61px] max-w-[350px]">
                     {/* Main Links */}
-                    <div className="flex flex-col gap-4">
-                        <Link href="/book" className="text-white text-base font-medium flex items-center gap-2 hover:opacity-80 transition-opacity">
-                            Book Now <ArrowRight className="w-4 h-4" />
+                    <div className="flex flex-col gap-[32px] font-body [letter-spacing:-0.01em] [word-spacing:-0.1.5px]">
+                        <Link href="/book" className="text-white text-[16px] font-[500] flex items-center gap-[11px] hover:opacity-80 leading-[20.8px] transition-opacity">
+                            Book Now <img src="/assets/SmallArrow.svg" alt="" className='rotate-90 w-[14.5px] h-[15px]' />
                         </Link>
-                        <Link href="/services" className="text-white text-base font-medium hover:opacity-80 transition-opacity">
-                            What is Lux & Our Services
-                        </Link>
-                        <Link href="/why-choose-lux" className="text-white text-base font-medium hover:opacity-80 transition-opacity">
+                        <a href="/services" className="text-white text-[16px] leading-[20.8px] [letter-spacing:-0.01em] [word-spacing:-2px] font-[500] hover:opacity-80 transition-opacity">
+                        What is Lux<span className='[word-spacing:-0px]'>&nbsp;& Our Services</span>
+                        </a>
+                        <Link href="/why-choose-lux" className="text-white text-[16px] font-[500] hover:opacity-80 leading-[20.8px] transition-opacity">
                             Why Choose Lux
                         </Link>
-                        <Link href="/start-earning" className="text-white text-base font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/start-earning" className="text-white text-[16px] font-[500] hover:opacity-80 leading-[20.8px] transition-opacity">
                             Start Earning
                         </Link>
                     </div>
 
                     {/* Social Links */}
-                    <div className="flex flex-col gap-y-4">
-                        <Link href="https://instagram.com" target="_blank" className="text-white text-base font-medium hover:opacity-80 [letter-spacing:-0.01em] leading-[20.8px] transition-opacity">
+                    <div className="flex flex-col gap-[24px] mt-[32px] font-body">
+                        <Link href="https://instagram.com" target="_blank" className="text-white text-[16px] font-medium hover:opacity-80 [letter-spacing:-0.01em] leading-[20.8px] transition-opacity">
                             Instagram
                         </Link>
-                        <Link href="https://facebook.com" target="_blank" className="text-white text-base font-medium hover:opacity-80 [letter-spacing:-0.01em] leading-[20.8px] transition-opacity">
+                        <Link href="https://facebook.com" target="_blank" className="text-white text-[16px] font-medium hover:opacity-80 [letter-spacing:-0.01em] leading-[20.8px] transition-opacity">
                             Facebook
                         </Link>
-                        <Link href="https://x.com" target="_blank" className="text-white text-base font-medium hover:opacity-80 [letter-spacing:-0.01em] leading-[20.8px] transition-opacity">
+                        <Link href="https://x.com" target="_blank" className="text-white text-[16px] font-medium hover:opacity-80 [letter-spacing:-0.01em] leading-[20.8px] transition-opacity">
                             X
                         </Link>
                     </div>
 
                     {/* Support Links */}
-                    <div className="flex flex-col gap-y-[24px] ">
-                        <Link href="/chat" className="text-white [letter-spacing:-0.01em] text-[16px] leading-[20.8px] font-medium hover:opacity-80 transition-opacity">
-                            Chat with us
+                    <div className="flex flex-col gap-[24px] mt-[32px] font-body">
+                        <Link href="/chat" className="text-white [letter-spacing:-0.01em]  text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity">
+                            <span className="[word-spacing:-2px]">Chat with</span><span className="ml-[2px]"> us</span>
                         </Link>
-                        <Link href="/faqs" className="text-white [letter-spacing:-0.01em] text-[16px] leading-[20.8px] font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/faqs" className="text-white [letter-spacing:-0.01em]  text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity">
                             FAQs
                         </Link>
                     </div>
 
                     {/* Legal Links - Mobile */}
-                    <div className="flex flex-col gap-[32px]">
-                        <Link href="/privacy" className="text-white text-[16px] font-medium hover:opacity-80 transition-opacity">
+                    <div className="flex flex-col gap-[24px] mt-[32px] [letter-spacing:-0.01em] font-body">
+                        <Link href="/privacy" className="text-white text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity">
                             Privacy
                         </Link>
-                        <Link href="/terms" className="text-white text-[16px] font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/terms" className="text-white text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity">
                             Terms
                         </Link>
-                        <Link href="/safety" className="text-white text-[16px] font-medium hover:opacity-80 transition-opacity">
+                        <Link href="/safety" className="text-white text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity">
                             Safety
                         </Link>
                     </div>
@@ -134,7 +134,7 @@ const Footer = () => {
                     </p>
 
                     {/* Legal Links - Desktop/Tablet */}
-                    <div className="hidden sm:flex items-center gap-x-[32px] ">
+                    <div className="hidden custom-md:flex items-center gap-x-[32px] ">
                         <Link href="/privacy" className="text-white text-[16px] font-[500] [word-spacing:-1px] [letter-spacing:-0.01em] mt-[3px] leading-[20.8px] hover:opacity-80 transition-opacity">
                             Privacy
                         </Link>

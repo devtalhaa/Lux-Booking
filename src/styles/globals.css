@@ -74,6 +74,7 @@
   /* Custom breakpoints */
   --breakpoint-lg: 1439px;
   --breakpoint-custom-md: 810px;
+  --breakpoint-large-mobile: 390px;
   --breakpoint-mobile: 320px;
 
   /* Custom colors for Tailwind */
