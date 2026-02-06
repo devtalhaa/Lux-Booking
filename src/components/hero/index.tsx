@@ -26,7 +26,7 @@ const Hero = () => {
         <Services />
       </div>
 
-      {/* Call to Action Section */}
+
       <section className="pt-[41px] w-full">
         <div className="text-center w-full">
           <div className="custom-md:flex items-center justify-between gap-4 ">

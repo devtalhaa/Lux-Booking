@@ -10,16 +10,16 @@ const Services = () => {
   const [showHover, setShowHover] = useState(false);
   const { t } = useLanguage();
 
-  // Auto-cycle for mobile: toggle hover state every 2 seconds
+
   useEffect(() => {
     const interval = setInterval(() => {
       setShowHover((prev) => {
         if (prev) {
-          // If currently showing hover, move to next card
+
           setCurrentIndex((idx) => (idx + 1) % 3);
           return false;
         } else {
-          // Show hover state
+
           return true;
         }
       });
@@ -74,7 +74,7 @@ const Services = () => {
   return (
     <section className="">
       <div className=" custom-md:px-8 custom-md:max-w-[746px] lg:max-w-[960px] ">
-        {/* Mobile Layout - Single card carousel (below custom-md/810px) */}
+
         <div className="custom-md:hidden w-full">
           {services.map((service, index) => (
             <div
@@ -89,7 +89,7 @@ const Services = () => {
 
               <div className="flex items-center justify-center py-2">
                 <div className={`relative ${service.dims || 'w-48 h-48'}`}>
-                  {/* Normal Icon */}
+
                   <div className={`absolute inset-0 transition-opacity duration-300 ${showHover ? 'opacity-0' : 'opacity-100'}`}>
                     <Image
                       src={service.icon}
@@ -98,7 +98,7 @@ const Services = () => {
                       className="w-[123px] h-[151px]"
                     />
                   </div>
-                  {/* Hover Icon */}
+
                   <div className={`absolute inset-0 transition-opacity duration-300 ${showHover ? 'opacity-100' : 'opacity-0'}`}>
                     <Image
                       src={service.hoverIcon}
@@ -107,7 +107,7 @@ const Services = () => {
                       className="w-[162px] h-[151px]"
                     />
                   </div>
-                  {/* Overlay Icon */}
+
                   {service.overlayIcon && (
                     <div className={`absolute bottom-7 -left-3 w-[48px] h-[38px] transition-opacity duration-300 z-10 ${showHover ? 'opacity-100' : 'opacity-0'}`}>
                       <Image
@@ -128,7 +128,7 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Desktop Layout - All cards with hover (custom-md/810px and above) */}
+
         <div className="hidden custom-md:flex justify-center md:gap-4 w-full">
           {services.map((service) => (
             <div
@@ -146,7 +146,7 @@ const Services = () => {
 
               <div className="flex items-center justify-center py-2">
                 <div className={`relative ${service.dims || 'w-48 h-48'}`}>
-                  {/* Default Icon */}
+
                   <div className="absolute inset-0 transition-opacity group-hover:opacity-0 opacity-100">
                     <Image
                       src={service.icon}
@@ -155,7 +155,7 @@ const Services = () => {
                       className="w-[123px] h-[151px]"
                     />
                   </div>
-                  {/* Hover Icon */}
+
                   <div className="absolute inset-0 transition-opacity group-hover:opacity-100 opacity-0">
                     <Image
                       src={service.hoverIcon}
@@ -164,7 +164,7 @@ const Services = () => {
                       className="w-[162px] h-[151px]"
                     />
                   </div>
-                  {/* Overlay Icon (e.g., Sparks) */}
+
                   {service.overlayIcon && (
                     <div className="absolute bottom-7 -left-3 w-[48px] h-[38px] transition-opacity group-hover:opacity-100 opacity-0 z-10">
                       <Image
