@@ -31,7 +31,7 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      distance: `${t('services.distancePrefix')} 1.5 ${t('services.distanceSuffix')}`.trim(),
+      distance: `${t('services.distancePrefix')} 1.5${t('services.distanceSuffix')}`.trim(),
       rating: '4.7',
       title: t('services.handyman'),
       icon: '/assets/Layer 1.svg',
@@ -44,7 +44,7 @@ const Services = () => {
     },
     {
       id: 2,
-      distance: `${t('services.distancePrefix')} 2.2 ${t('services.distanceSuffix')}`.trim(),
+      distance: `${t('services.distancePrefix')} 2.2${t('services.distanceSuffix')}`.trim(),
       rating: '4.9',
       title: t('services.homeCleaning'),
       icon: '/assets/Layer 2.svg',
@@ -58,7 +58,7 @@ const Services = () => {
     },
     {
       id: 3,
-      distance: `${t('services.distancePrefix')} 1 ${t('services.distanceSuffix')}`.trim(),
+      distance: `${t('services.distancePrefix')} 1${t('services.distanceSuffix')}`.trim(),
       rating: '4.8',
       title: t('services.dogWalking'),
       icon: '/assets/Layer 3.svg',

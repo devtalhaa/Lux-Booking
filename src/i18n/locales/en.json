@@ -17,7 +17,7 @@
         "laundryPickUp": "Laundry Pick-Up",
         "rating": "Rating",
         "distancePrefix": "",
-        "distanceSuffix": "away"
+        "distanceSuffix": "km away"
     },
     "whatIsLux": {
         "title": "What Is Lux",
