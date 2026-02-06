@@ -1,7 +1,7 @@
-/* Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-/* General Sans - Local Font Files */
+
 @font-face {
   font-family: 'General Sans';
   src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
@@ -37,7 +37,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Colors */
+
   --color-primary: #00C974;
   --color-primary-hover: #00B066;
   --color-dark: #1A1A1A;
@@ -50,17 +50,17 @@
   --color-coral-text: #FF6B6B;
   --color-border: #E5E5E5;
   --color-slate: #F7F7FC;
-  /* Fonts */
+
   --font-heading: "AR One Sans", sans-serif;
   --font-body: "DM Sans", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-general-sans: "General Sans", sans-serif;
 
-  /* Spacing */
+
   --container-max-width: 960px;
   --container-padding: 1.5rem;
 
-  /* Legacy variables for compatibility */
+
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -71,13 +71,13 @@
   --font-sans: var(--font-body);
   --font-heading: var(--font-heading);
 
-  /* Custom breakpoints */
+
   --breakpoint-lg: 1439px;
   --breakpoint-custom-md: 810px;
   --breakpoint-large-mobile: 390px;
   --breakpoint-mobile: 320px;
 
-  /* Custom colors for Tailwind */
+
   --color-primary: #00C974;
   --color-primary-hover: #00B066;
   --color-dark: #1A1A1A;
@@ -95,7 +95,7 @@ body {
   font-family: var(--font-body);
 }
 
-/* Typography utilities */
+
 .font-heading {
   font-family: var(--font-heading);
 }
@@ -112,7 +112,7 @@ body {
   font-family: var(--font-general-sans);
 }
 
-/* Button base styles */
+
 .btn {
   display: inline-flex;
   align-items: center;
