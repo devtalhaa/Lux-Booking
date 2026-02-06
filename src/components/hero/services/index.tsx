@@ -3,10 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Container from '../../common/Container';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showHover, setShowHover] = useState(false);
+  const { t } = useLanguage();
 
   // Auto-cycle for mobile: toggle hover state every 2 seconds
   useEffect(() => {
@@ -29,9 +31,9 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      distance: '1.5km away',
+      distance: `${t('services.distancePrefix')} 1.5 ${t('services.distanceSuffix')}`.trim(),
       rating: '4.7',
-      title: 'Handyman',
+      title: t('services.handyman'),
       icon: '/assets/Layer 1.svg',
       hoverIcon: '/assets/hover_layer1.svg',
       pillColor: 'bg-[#E6E6E6]  text-black',
@@ -42,9 +44,9 @@ const Services = () => {
     },
     {
       id: 2,
-      distance: '2.2km away',
+      distance: `${t('services.distancePrefix')} 2.2 ${t('services.distanceSuffix')}`.trim(),
       rating: '4.9',
-      title: 'Home Cleaning',
+      title: t('services.homeCleaning'),
       icon: '/assets/Layer 2.svg',
       hoverIcon: '/assets/hover_layer2.svg',
       overlayIcon: '/assets/layer2over.svg',
@@ -56,9 +58,9 @@ const Services = () => {
     },
     {
       id: 3,
-      distance: '1km away',
+      distance: `${t('services.distancePrefix')} 1 ${t('services.distanceSuffix')}`.trim(),
       rating: '4.8',
-      title: 'Dog Walking',
+      title: t('services.dogWalking'),
       icon: '/assets/Layer 3.svg',
       hoverIcon: '/assets/hover_layer3.svg',
       pillColor: 'bg-[#E6E6E6] ',
@@ -81,7 +83,7 @@ const Services = () => {
             >
               <div className="w-full text-center">
                 <span className="text-[16px] font-[500] text-black font-body [letter-spacing:-.01em] mt-[16px] leading-[18.2px] block">
-                  {showHover ? `${service.rating} Rating` : service.distance}
+                  {showHover ? `${service.rating} ${t('services.rating')}` : service.distance}
                 </span>
               </div>
 
@@ -138,7 +140,7 @@ const Services = () => {
                   {service.distance}
                 </span>
                 <span className="text-[14px] font-[500] text-black hidden group-hover:block font-body [letter-spacing:-.01em] mt-[16px] leading-[18.2px]">
-                  {service.rating} Rating
+                  {service.rating} {t('services.rating')}
                 </span>
               </div>
 
