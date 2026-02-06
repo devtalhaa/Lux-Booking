@@ -107,6 +107,7 @@ const WhyChooseLux = () => {
             <h3 className="text-[26px] font-[600] font-body [letter-spacing:-0.03em] lg:[letter-spacing:-0.0301em] [word-spacing:-3px] custom-md:[word-spacing:2.2px] lg:[word-spacing:-3px] text-black mb-[20px]  leading-[33.8px]">
               {/* Mobile version (below custom-md) */}
               <span className="custom-md:hidden block" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('whyChooseLux.effortlessTitleMobile')}</span>
+              <span className="custom-md:hidden block">{t('whyChooseLux.effortlessSubtitleMobile')}</span>
               {/* Tablet version (custom-md to lg) */}
               <span className="hidden custom-md:inline lg:hidden" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('whyChooseLux.effortlessTitleTablet')}</span>
               <span className="hidden custom-md:block lg:hidden [word-spacing:-3px]">{t('whyChooseLux.effortlessSubtitleTablet')}</span>

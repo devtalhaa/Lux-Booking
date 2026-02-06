@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className=" custom-md:max-w-[746px] lg:max-w-[960px] mx-auto  mt-[20px] custom-md:mt-[48px] lg:mt-[64px]">
       <div className="text-center w-full">
-        <h1 className=" text-center font-general-sans  custom-md:text-nowrap text-[40px]  custom-md:text-[48px] lg:text-[64px] font-[600] text-black [letter-spacing:-.03em] custom-md:[letter-spacing:-.01em] lg:[letter-spacing:-.03em] leading-[52px] custom-md:leading-[62.4px] lg:leading-[83.2px] mb-[40px]">
+        <h1 className=" text-center font-general-sans whitespace-pre-line custom-md:whitespace-normal custom-md:text-nowrap text-[40px]  custom-md:text-[48px] lg:text-[64px] font-[600] text-black [letter-spacing:-.03em] custom-md:[letter-spacing:-.01em] lg:[letter-spacing:-.03em] leading-[52px] custom-md:leading-[62.4px] lg:leading-[83.2px] mb-[40px]">
           {t('hero.title')}
         </h1>
       </div>

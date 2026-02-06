@@ -73,7 +73,7 @@ const Services = () => {
 
   return (
     <section className="">
-      <div className="px-5 custom-md:px-8 custom-md:max-w-[746px] lg:max-w-[960px] ">
+      <div className=" custom-md:px-8 custom-md:max-w-[746px] lg:max-w-[960px] ">
         {/* Mobile Layout - Single card carousel (below custom-md/810px) */}
         <div className="custom-md:hidden w-full">
           {services.map((service, index) => (

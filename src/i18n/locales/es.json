@@ -4,7 +4,7 @@
         "offeringServices": "¿Ofreciendo servicios?"
     },
     "hero": {
-        "title": "Reserva Servicios Locales Ya.",
+        "title": "Reserva Servicios \n Locales Ya.",
         "subtitle": "Rápido, amigable y siempre cerca.",
         "bookNow": "Reserva ya"
     },
@@ -17,7 +17,7 @@
         "laundryPickUp": "Recogida de lavandería",
         "rating": "nota",
         "distancePrefix": "A",
-        "distanceSuffix": "km"
+        "distanceSuffix": " km"
     },
     "whatIsLux": {
         "title": "¿Qué Es Lux?",
@@ -47,6 +47,7 @@
         "vettedProvidersDesc": "Cada profesional de Lux está verificado y revisado por vecinos, así que siempre obtienes un servicio de calidad y confiable.",
         "effortlessTitle": "Recurrente sin esfuerzo",
         "effortlessTitleMobile": "Citas recurrentes",
+        "effortlessSubtitleMobile": "",
         "effortlessTitleTablet": "Recurrente sin esfuerzo",
         "effortlessSubtitle": "citas",
         "effortlessSubtitleTablet": "citas",
