@@ -35,7 +35,7 @@ const WhyChooseLux = () => {
 
         <div className="mt-[48px] custom-md:mt-[32px] lg:mt-16 grid grid-cols-1 font-body custom-md:grid-cols-2  custom-md:gap-[64px] lg:gap-[62px] items-center">
           <div className="text-center custom-md:text-left order-2 custom-md:order-1 lg:max-h-[138px]">
-            <h3 className="text-[26px] mt-[32px] custom-md:mt-0  font-[600] text-black mb-[20px] leading-[33.8px] [word-spacing:-3px] custom-md:[word-spacing:-3px] [letter-spacing:-0.0315em] ">
+            <h3 className="text-[26px] mt-[32px] custom-md:mt-0  font-[600] text-black mb-[20px] leading-[33.6px] [word-spacing:-3px] custom-md:[word-spacing:-3px] [letter-spacing:-0.0315em] ">
 
               <span className="hidden custom-md:inline lg:hidden custom-md:mr-0 mr-[6px]" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('whyChooseLux.fastBookingTitle')}</span>
               <span className="hidden custom-md:block lg:hidden [word-spacing:-3px] [letter-spacing:-0.0315em]" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('whyChooseLux.fastBookingSubtitleTablet')}</span>
@@ -47,7 +47,7 @@ const WhyChooseLux = () => {
               <span className="custom-md:hidden block [word-spacing:-3px] [letter-spacing:-0.0315em]" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('whyChooseLux.fastBookingSubtitleMobile')}</span>
               {locale === 'es' && <span className="custom-md:hidden block [word-spacing:-3px] [letter-spacing:-0.0315em]">{t('whyChooseLux.fastBookingSubtitleMobile2')}</span>}
             </h3>
-            <p className="text-[20px] hidden custom-md:block lg:text-[18px] [letter-spacing:-0.03em] text-[#4D4D4D] font-[500] leading-[28px] lg:leading-[25.2px] custom-md:tracking-tight">
+            <p className="text-[20px] hidden custom-md:block lg:text-[18px] [letter-spacing:-0.03em] text-[#4D4D4D] font-[500] leading-[28px] lg:leading-[25.207px]">
               {t('whyChooseLux.fastBookingDesc')}
             </p>
             <p className="text-[20px] block custom-md:hidden [letter-spacing:-0.03em] text-[#4D4D4D] font-[500] leading-[28px] max-w-[350px] custom-md:w-auto mx-auto">
@@ -93,7 +93,7 @@ const WhyChooseLux = () => {
               <span className="custom-md:hidden block">{t('whyChooseLux.vettedProvidersTitleMobile')}</span>
               {locale === 'es' && <span className="custom-md:hidden block">{t('whyChooseLux.vettedProvidersTitleMobile2')}</span>}
             </h3>
-            <p className="text-[20px] text-center custom-md:text-left lg:text-[18px] text-[#4D4D4D] max-w-[350px] custom-md:w-auto lg:max-w-none font-[500] [letter-spacing:-0.03em] leading-[28px] lg:leading-[25.2px] [letter-spacing:-0.03em] tracking-tight">
+            <p className="text-[20px] text-center custom-md:text-left lg:text-[18px] text-[#4D4D4D] max-w-[350px] custom-md:w-auto lg:max-w-none font-[500] [letter-spacing:-0.03em] leading-[28px] lg:leading-[25.2px]">
               {t('whyChooseLux.vettedProvidersDesc')}
             </p>
           </div>
