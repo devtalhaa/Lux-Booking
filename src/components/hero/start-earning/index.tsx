@@ -27,9 +27,9 @@ const StartEarning = () => {
 
 
             <div className="text-center custom-md:text-left order-2 flex-1  custom-md:pl-[24px] mt-[24px] custom-md:mt-0">
-              <h2 className="break-words text-[40px] lg:text-[48px] [letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] leading-[52px] lg:leading-[62.4px] [word-spacing:-4px] lg:[word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] " style={locale === 'es' ? { wordSpacing: '0px' } : {}}>
+              <h2 className="break-words text-[40px] lg:text-[48px] [letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] leading-[52px] lg:leading-[62.25px] lg:mt-[1px] [word-spacing:-4px] lg:[word-spacing:-5px] font-[600] font-general-sans text-black mb-[27px] " style={locale === 'es' ? { wordSpacing: '0px' } : {}}>
 
-                <span className="hidden custom-md:inline">{t('startEarning.title')}</span> <span className='hidden custom-md:inline lg:block break-words lg:[word-spacing:-4.8px] custom-md:ml-[4px] lg:ml-[1px]' style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('startEarning.titleSpan')}</span>
+                <span className="hidden custom-md:inline">{t('startEarning.title')}</span> <span className='hidden custom-md:inline lg:block break-words lg:[word-spacing:-4.8px] custom-md:ml-[4px] lg:ml-0' style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('startEarning.titleSpan')}</span>
 
                 <span className="custom-md:hidden block" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('startEarning.titleMobile')}</span>
                 <span className="custom-md:hidden block" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>{t('startEarning.titleSpanMobile')}</span>
