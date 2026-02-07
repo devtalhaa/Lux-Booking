@@ -25,9 +25,8 @@ const WhatIsLux = () => {
     return (
         <section className="w-full bg-[#F4F3FB] custom-md:max-h-[814px] px-[20px] lg:px-0 custom-md:px-[32px] lg:py-0 py-[32px] custom-md:py-[48px] mt-[32px] custom-md:mt-[48px] lg:mt-[64px]">
             <div className="custom-md:max-w-[746px] lg:max-w-[960px] mx-auto lg:py-[64px]">
-                {/* Top Row - Image and What Is Lux Card */}
                 <div className="grid grid-cols-1 custom-md:grid-cols-[1.272fr_1fr] lg:grid-cols-[1.325fr_1fr] gap-[16px] items-start">
-                    {/* Left - Image (order-2 on mobile = appears below, order-1 on custom-md = appears left) */}
+
                     <div className="order-2 custom-md:order-1">
                         <img
                             src={locale === 'es' ? "/assets/spanishLux.png" : "/assets/Lux1.avif"}
@@ -37,7 +36,7 @@ const WhatIsLux = () => {
                         />
                     </div>
 
-                    {/* Right - What Is Lux Card (order-1 on mobile = appears first/top, order-2 on custom-md = appears right) */}
+
                     <div className="order-1 custom-md:order-2 bg-white rounded-[16px]  py-[24px] px-[24px] flex flex-col justify-between custom-md:h-[347px]">
                         <h2 className="text-center custom-md:text-left text-[40px] lg:text-[48px] custom-md:leading-[62.4px] leading-[52px] [letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-[600] custom-md:-mt-1 lg:-mt-[2px] font-general-sans text-black ">
                             {t('whatIsLux.title')}
@@ -48,9 +47,8 @@ const WhatIsLux = () => {
                     </div>
                 </div>
 
-                {/* Bottom Row - Current Services and Services Coming Soon Cards */}
                 <div className="custom-md:flex gap-[16px] mt-[16px]">
-                    {/* Current Services Card */}
+
                     <div className="custom-md:flex-1 bg-white rounded-[16px] py-[24px] px-[24px]">
                         <div className="custom-md:flex items-center justify-between text-center mb-[24px]">
                             <h3 className="text-[26px] leading-[33.8px] [letter-spacing:-0.03em]  font-[600]  font-body text-black">
@@ -74,7 +72,7 @@ const WhatIsLux = () => {
                         </div>
                     </div>
 
-                    {/* Services Coming Soon Card */}
+
                     <div className="flex-1 bg-[#D9D7F1] rounded-[16px] mt-[10px] custom-md:mt-0 p-[24px]">
                         <h3 className="text-[26px] leading-[1.3em] custom-md:text-left text-center [letter-spacing:-0.03em] font-[600]  font-body mb-[14px]">
                             <span className="custom-md:hidden">{t('whatIsLux.servicesComingSoon')}</span>

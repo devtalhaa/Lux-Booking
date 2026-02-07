@@ -4,7 +4,7 @@
         "offeringServices": "Offering Services?"
     },
     "hero": {
-        "title": "Book Local Services Instantly.",
+        "title": "Book Local \n Services Instantly.",
         "subtitle": "Fast, frendly, and always close by.",
         "bookNow": "Book Now"
     },
@@ -17,7 +17,7 @@
         "laundryPickUp": "Laundry Pick-Up",
         "rating": "Rating",
         "distancePrefix": "",
-        "distanceSuffix": "away"
+        "distanceSuffix": "km away"
     },
     "whatIsLux": {
         "title": "What Is Lux",
@@ -36,17 +36,18 @@
         "subtitle": "Fast, frendly, and always close by.",
         "fastBookingTitle": "Fast, easy booking",
         "fastBookingTitleMobile": "Fast, easy booking",
-        "fastBookingSubtitle": "no waiting for quotes",
-        "fastBookingSubtitleMobile": "no waiting for quotes",
+        "fastBookingSubtitle": "never wait for quotes",
+        "fastBookingSubtitleMobile": "never wait for quotes",
         "fastBookingSubtitleMobile2": "",
-        "fastBookingSubtitleTablet": "no waiting for quotes",
-        "fastBookingDesc": "Book instantly with clear pricing and no hidden fees or time-wasting calls.",
+        "fastBookingSubtitleTablet": "never wait for quotes",
+        "fastBookingDesc": "Book instantly with clear, upfront prices no hidden fees or time‑wasting phone calls.",
         "vettedProvidersTitle": "Vetted local providers",
         "vettedProvidersTitleMobile": "Vetted local providers",
         "vettedProvidersTitleMobile2": "",
         "vettedProvidersDesc": "Every Lux pro is identity‑checked and reviewed by neighbors, so you always get quality, reliable service.",
         "effortlessTitle": "Effortless recurring",
         "effortlessTitleMobile": "Effortless recurring",
+        "effortlessSubtitleMobile": "appointments",
         "effortlessTitleTablet": "Effortless recurring",
         "effortlessSubtitle": "appointments",
         "effortlessSubtitleTablet": "appointments",
@@ -57,7 +58,7 @@
         "titleMobile": "Start Earning",
         "titleSpan": "With Lux",
         "titleSpanMobile": "With Lux",
-        "description": "Join Lux, share your services, and start earning fast. See why Lux is the easiest way to earn in CDMX.",
+        "description": "Join Lux, share your services, and start making money fast. See why Lux is the easiest way to earn in CDMX.",
         "descriptionMobile": "Join Lux, share your services, and start earning fast. See why Lux is the easiest way to earn in CDMX.",
         "applyToJoin": "Apply to Join"
     },
