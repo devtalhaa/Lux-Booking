@@ -38,10 +38,10 @@ const WhatIsLux = () => {
 
 
                     <div className="order-1 custom-md:order-2 bg-white rounded-[16px]  py-[24px] px-[24px] flex flex-col justify-between custom-md:h-[347px]">
-                        <h2 className="text-center custom-md:text-left text-[40px] lg:text-[48px] custom-md:leading-[62.4px] leading-[52px] [letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-[600] custom-md:-mt-1 lg:-mt-[2px] font-general-sans text-black ">
+                        <h2 className="text-center custom-md:text-left text-[40px] lg:text-[48px] custom-md:leading-[62.4px] leading-[52px] [letter-spacing:-0.03em] lg:[letter-spacing:-0.01em] font-[600] custom-md:-mt-1 lg:mt-[1px] font-general-sans text-black ">
                             {t('whatIsLux.title')}
                         </h2>
-                        <p className="text-[20px] lg:text-[18px] mt-[64px] custom-md:mt-0 text-center custom-md:text-left leading-[28px] lg:leading-[25.2px] [letter-spacing:-0.03em]  font-[500] font-body font-body text-[#4D4D4D] ">
+                        <p className="text-[20px] lg:text-[18px] mt-[64px] custom-md:mt-0 text-center custom-md:text-left leading-[28px] lg:leading-[25px] [letter-spacing:-0.03em]  font-[500] font-body font-body text-[#4D4D4D] ">
                             {t('whatIsLux.description')}
                         </p>
                     </div>
