@@ -65,7 +65,7 @@ const Footer = () => {
 
                     <div className="flex flex-col gap-y-[24px]">
                         <a href="/chat" className="text-white leading-[20.8px] [letter-spacing:-0.01em] text-base font-medium hover:opacity-80 transition-opacity" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>
-                            {t('footer.chatWithUs')}
+                            <span className="[word-spacing:-2px]">{t('footer.chatWith')}</span> {t('footer.us')}
                         </a>
                         <a href="/faqs" className="text-white leading-[20.8px] [word-spacing:-2px] [letter-spacing:-0.01em] text-base font-medium hover:opacity-80 transition-opacity" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>
                             {t('footer.faqs')}
@@ -107,7 +107,7 @@ const Footer = () => {
 
                     <div className="flex flex-col gap-[24px] mt-[32px] font-body">
                         <Link href="/chat" className="text-white [letter-spacing:-0.01em]  text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>
-                            {t('footer.chatWithUs')}
+                            <span className="[word-spacing:-2px]">{t('footer.chatWith')}</span> {t('footer.us')}
                         </Link>
                         <Link href="/faqs" className="text-white [letter-spacing:-0.01em]  text-[16px] leading-[20.8px] font-[500] hover:opacity-80 transition-opacity" style={locale === 'es' ? { wordSpacing: '0px' } : {}}>
                             {t('footer.faqs')}
