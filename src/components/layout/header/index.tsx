@@ -39,11 +39,12 @@ const Header = () => {
               <option value="es" className="text-[12px] font-sans font-[400]">ES</option>
             </select>
           </div>
-          <Link href="/login">
+          <a href="https://lux-web-theta.vercel.app/login">
             <Button variant="secondary" className=' text-nowrap leading-[18.2px] [letter-spacing:-.01em]'>
               {t('header.signIn')}
             </Button>
-          </Link>
+          </a>
+          
           <Button variant="primary" className="font-medium">
             {t('header.offeringServices')}
           </Button>
